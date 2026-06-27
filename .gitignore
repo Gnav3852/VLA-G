@@ -1,0 +1,26 @@
+# Python / local env
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Vendored upstream repos (cloned for local dev; not part of this project)
+LIBERO/
+openvla/
+vla-evaluation-harness/
+
+# Ephemeral analysis artifacts
+_noop_grasp.png
+
+# Trajectories (*.json under *_trajectories/ and controls/) and plots (*.png) are tracked.

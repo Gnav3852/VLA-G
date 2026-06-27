@@ -1,0 +1,62 @@
+[
+  {
+    "name": "ctrl_g0p00_clean",
+    "gain": 0.0,
+    "noise": "clean",
+    "path": "/Users/gsn89/ReadTeam/controls/ctrl_g0p00_clean"
+  },
+  {
+    "name": "ctrl_g0p00_noisy",
+    "gain": 0.0,
+    "noise": "noisy",
+    "path": "/Users/gsn89/ReadTeam/controls/ctrl_g0p00_noisy"
+  },
+  {
+    "name": "ctrl_g0p25_clean",
+    "gain": 0.25,
+    "noise": "clean",
+    "path": "/Users/gsn89/ReadTeam/controls/ctrl_g0p25_clean"
+  },
+  {
+    "name": "ctrl_g0p25_noisy",
+    "gain": 0.25,
+    "noise": "noisy",
+    "path": "/Users/gsn89/ReadTeam/controls/ctrl_g0p25_noisy"
+  },
+  {
+    "name": "ctrl_g0p50_clean",
+    "gain": 0.5,
+    "noise": "clean",
+    "path": "/Users/gsn89/ReadTeam/controls/ctrl_g0p50_clean"
+  },
+  {
+    "name": "ctrl_g0p50_noisy",
+    "gain": 0.5,
+    "noise": "noisy",
+    "path": "/Users/gsn89/ReadTeam/controls/ctrl_g0p50_noisy"
+  },
+  {
+    "name": "ctrl_g0p75_clean",
+    "gain": 0.75,
+    "noise": "clean",
+    "path": "/Users/gsn89/ReadTeam/controls/ctrl_g0p75_clean"
+  },
+  {
+    "name": "ctrl_g0p75_noisy",
+    "gain": 0.75,
+    "noise": "noisy",
+    "path": "/Users/gsn89/ReadTeam/controls/ctrl_g0p75_noisy"
+  },
+  {
+    "name": "ctrl_g1p00_clean",
+    "gain": 1.0,
+    "noise": "clean",
+    "path": "/Users/gsn89/ReadTeam/controls/ctrl_g1p00_clean"
+  },
+  {
+    "name": "ctrl_g1p00_noisy",
+    "gain": 1.0,
+    "noise": "noisy",
+    "path": "/Users/gsn89/ReadTeam/controls/ctrl_g1p00_noisy"
+  }
+]
