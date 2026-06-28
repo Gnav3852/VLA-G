@@ -1,0 +1,184 @@
+{
+  "n_aligned": 5,
+  "sanity_gate": {
+    "pass": false,
+    "per_model": {
+      "openvla": {
+        "pass": true,
+        "visual_pass": true,
+        "action_pass": true,
+        "target_black": 0.2703938765847525,
+        "background_black": 0.3038867092842609,
+        "target_gt_background": false,
+        "norm_target_shift": 8.406324998035265,
+        "norm_background_shift": 0.31398624234806904,
+        "norm_target_gt_background": true,
+        "mask_pixels": 2108,
+        "primary_target_overlap": 2108,
+        "primary_target_pixels": 777
+      },
+      "pi05": {
+        "pass": false,
+        "reason": "missing_condition"
+      }
+    }
+  },
+  "models_passing_sanity": [
+    "openvla"
+  ],
+  "pooled_raw_l2": {
+    "n": 5,
+    "pearson_r": 0.931550836935238,
+    "spearman_rho": 0.8999999999999998,
+    "pearson_ci_95": {
+      "lo": 0.7471860944297324,
+      "hi": 1.0
+    },
+    "small_n_flag": true,
+    "y_metric": "raw_l2_shift"
+  },
+  "pooled_normalized_l2": {
+    "n": 5,
+    "pearson_r": 0.943953817408812,
+    "spearman_rho": 0.8999999999999998,
+    "pearson_ci_95": {
+      "lo": 0.5014513202678085,
+      "hi": 1.0
+    },
+    "small_n_flag": true,
+    "y_metric": "normalized_l2_shift"
+  },
+  "within_model_raw": {
+    "per_model": {
+      "openvla": {
+        "n": 5,
+        "pearson_r": 0.931550836935238,
+        "spearman_rho": 0.8999999999999998
+      }
+    },
+    "n_models": 1
+  },
+  "within_model_normalized": {
+    "per_model": {
+      "openvla": {
+        "n": 5,
+        "pearson_r": 0.943953817408812,
+        "spearman_rho": 0.8999999999999998
+      }
+    },
+    "n_models": 1
+  },
+  "mask_contrast_raw": {
+    "openvla": {
+      "target_black": 0.2703938765847525,
+      "background_black": 0.3038867092842609,
+      "ratio_target_over_bg": 0.8897851348010793,
+      "target_gt_background": false
+    },
+    "pi05": {
+      "status": "missing_condition"
+    }
+  },
+  "magnitude_note": {
+    "raw_vs_normalized_pearson": 0.992427444859,
+    "interpretation": "High raw-vs-normalized agreement suggests metric tracks relative shift, not just action magnitude. If raw and normalized correlations with \u0394SR diverge, prefer normalized for grounding claims."
+  },
+  "interpretation": "Only one model has passing live scores; pooled correlation is exploratory (n=5). Models blocked: pi05.",
+  "aligned_rows": [
+    {
+      "model": "openvla",
+      "setting": "target_bg",
+      "suite": "libero_spatial",
+      "baseline_sr": 79.67,
+      "masked_sr": 36.67,
+      "delta_sr": 43.0,
+      "relative_drop": 0.5397263712815363,
+      "avg_drop_paper": 47.75,
+      "variant": "mask_target",
+      "mode": "background_fill",
+      "condition_key": "openvla|mask_target|background_fill|libero_spatial",
+      "action_sensitivity": 0.4152115134731022,
+      "action_sensitivity_raw": 0.4152115134731022,
+      "raw_l2_shift": 0.4152115134731022,
+      "normalized_l2_shift": 0.3140563326666923,
+      "n_rollouts": 3,
+      "behavioral_source": "live_rollout"
+    },
+    {
+      "model": "openvla",
+      "setting": "target_black",
+      "suite": "libero_spatial",
+      "baseline_sr": 79.67,
+      "masked_sr": 63.33,
+      "delta_sr": 16.340000000000003,
+      "relative_drop": 0.20509602108698385,
+      "avg_drop_paper": 16.33,
+      "variant": "mask_target",
+      "mode": "black",
+      "condition_key": "openvla|mask_target|black|libero_spatial",
+      "action_sensitivity": 0.2703938765847525,
+      "action_sensitivity_raw": 0.2703938765847525,
+      "raw_l2_shift": 0.2703938765847525,
+      "normalized_l2_shift": 0.21154880883693397,
+      "n_rollouts": 3,
+      "behavioral_source": "live_rollout"
+    },
+    {
+      "model": "openvla",
+      "setting": "gripper_black",
+      "suite": "libero_spatial",
+      "baseline_sr": 79.67,
+      "masked_sr": 70.67,
+      "delta_sr": 9.0,
+      "relative_drop": 0.11296598468683318,
+      "avg_drop_paper": 8.67,
+      "variant": "mask_gripper",
+      "mode": "black",
+      "condition_key": "openvla|mask_gripper|black|libero_spatial",
+      "action_sensitivity": 0.28159093796303614,
+      "action_sensitivity_raw": 0.28159093796303614,
+      "raw_l2_shift": 0.28159093796303614,
+      "normalized_l2_shift": 0.231223632228489,
+      "n_rollouts": 3,
+      "behavioral_source": "live_rollout"
+    },
+    {
+      "model": "openvla",
+      "setting": "robot_black",
+      "suite": "libero_spatial",
+      "baseline_sr": 79.67,
+      "masked_sr": 3.33,
+      "delta_sr": 76.34,
+      "relative_drop": 0.9582025856658718,
+      "avg_drop_paper": 66.0,
+      "variant": "mask_robot",
+      "mode": "black",
+      "condition_key": "openvla|mask_robot|black|libero_spatial",
+      "action_sensitivity": 0.459662488574933,
+      "action_sensitivity_raw": 0.459662488574933,
+      "raw_l2_shift": 0.459662488574933,
+      "normalized_l2_shift": 0.36696040637440613,
+      "n_rollouts": 3,
+      "behavioral_source": "live_rollout"
+    },
+    {
+      "model": "openvla",
+      "setting": "background_black",
+      "suite": "libero_spatial",
+      "baseline_sr": 79.67,
+      "masked_sr": 47.33,
+      "delta_sr": 32.34,
+      "relative_drop": 0.4059244383080206,
+      "avg_drop_paper": 30.0,
+      "variant": "mask_background",
+      "mode": "black",
+      "condition_key": "openvla|mask_background|black|libero_spatial",
+      "action_sensitivity": 0.3038867092842609,
+      "action_sensitivity_raw": 0.3038867092842609,
+      "raw_l2_shift": 0.3038867092842609,
+      "normalized_l2_shift": 0.24069535924726018,
+      "n_rollouts": 3,
+      "behavioral_source": "live_rollout"
+    }
+  ]
+}

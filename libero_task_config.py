@@ -60,3 +60,16 @@ def get_task_preset(task_id: int) -> TaskPreset:
         known = ", ".join(str(k) for k in sorted(TASK_PRESETS))
         raise ValueError(f"Unknown task_id={task_id}; known: {known}")
     return TASK_PRESETS[task_id]
+
+
+# Wide-range position sweep outputs (FINAL RUN)
+WIDE_HALF_WIDTHS_M: tuple[float, ...] = (0.10, 0.15, 0.20)
+
+
+def wide_sweep_paths(task_id: int, model: str, half_width_m: float) -> tuple[Path, Path]:
+    """CSV + trajectory dir for a wide-range sweep at ±half_width_m."""
+    if model not in ("openvla", "pi05"):
+        raise ValueError(f"model must be openvla or pi05, got {model!r}")
+    half_cm = int(round(half_width_m * 100))
+    tag = f"wide_task{task_id}_{model}_w{half_cm}cm"
+    return ROOT / f"{tag}_rollouts.csv", ROOT / f"{tag}_trajectories"

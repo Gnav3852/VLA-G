@@ -1,0 +1,9 @@
+{
+  "model": "x_vla",
+  "checkpoint": "lerobot/xvla-libero",
+  "status": "pending",
+  "success": false,
+  "num_steps": 0,
+  "error": "Not run yet — LIBERO config pre-baked in modal_xvla_spike.py",
+  "next_step": "./.venv/bin/modal run modal_xvla_spike.py"
+}

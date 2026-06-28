@@ -19,6 +19,14 @@ __pycache__/
 LIBERO/
 openvla/
 vla-evaluation-harness/
+VLA-Trace/
+RoboSemanticBench/
+
+# PatchMask frame images (large, regenerable)
+patchmask_frames/
+
+# Occlusion controls (regenerable from make_occlusion_controls.py)
+controls_occlusion/
 
 # Ephemeral analysis artifacts
 _noop_grasp.png

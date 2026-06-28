@@ -1,0 +1,553 @@
+{
+  "task_id": 0,
+  "center_x": -0.06,
+  "center_y": 0.2,
+  "ranges": [
+    {
+      "half_width_m": 0.1,
+      "controls": {
+        "replayer": {
+          "slope": 0.5138150893572265,
+          "intercept": 0.07783021851902666,
+          "r2": 0.0954916361861009,
+          "pearson": 0.30901721017784894,
+          "n": 25,
+          "slope_ci_95": {
+            "lo": -0.0423394764668868,
+            "hi": 1.118091020738333
+          },
+          "label": "replayer",
+          "perturbation_span_m": 0.1414213562373095,
+          "mean_grasp_error_m": 0.1259840505763887,
+          "max_grasp_error_m": 0.23245056838666248
+        },
+        "oracle": {
+          "slope": 0.0,
+          "intercept": 0.0,
+          "r2": NaN,
+          "pearson": NaN,
+          "n": 25,
+          "slope_ci_95": {
+            "lo": 0.0,
+            "hi": 0.0
+          },
+          "label": "oracle",
+          "perturbation_span_m": 0.1414213562373095,
+          "mean_grasp_error_m": 0.0,
+          "max_grasp_error_m": 0.0
+        }
+      },
+      "models": {
+        "openvla": {
+          "exists": true,
+          "path": "wide_task0_openvla_w10cm_rollouts.csv",
+          "n_valid": 104,
+          "n_skipped": 21,
+          "n_success": 21,
+          "success_rate": 0.20192307692307693,
+          "regression_all": {
+            "slope": 1.0819714787504842,
+            "intercept": 0.027209860089306852,
+            "r2": 0.250656098474908,
+            "pearson": 0.5006556685736298,
+            "n": 104,
+            "slope_ci_95": {
+              "lo": 0.8093804309500704,
+              "hi": 1.3657845557916628
+            },
+            "label": "all_valid",
+            "perturbation_span_m": 0.1494346431843008,
+            "mean_grasp_error_m": 0.12576913966416758,
+            "max_grasp_error_m": 0.33434098125036305
+          },
+          "regression_successes": {
+            "slope": 1.1955601822379671,
+            "intercept": 0.014253439041437412,
+            "r2": 0.19947707664428183,
+            "pearson": 0.4466285667579739,
+            "n": 21,
+            "slope_ci_95": {
+              "lo": -0.08604416446269648,
+              "hi": 2.636547048250385
+            },
+            "label": "successes",
+            "perturbation_span_m": 0.11180533376943431,
+            "mean_grasp_error_m": 0.0865273436867092,
+            "max_grasp_error_m": 0.33434098125036305
+          },
+          "success_bins": [
+            {
+              "label": "0-5cm",
+              "n": 16,
+              "n_success": 8,
+              "success_rate": 0.5
+            },
+            {
+              "label": "5-10cm",
+              "n": 29,
+              "n_success": 8,
+              "success_rate": 0.27586206896551724
+            },
+            {
+              "label": "10-15cm",
+              "n": 59,
+              "n_success": 5,
+              "success_rate": 0.0847457627118644
+            }
+          ]
+        },
+        "pi05": {
+          "exists": true,
+          "path": "wide_task0_pi05_w10cm_rollouts.csv",
+          "n_valid": 104,
+          "n_skipped": 21,
+          "n_success": 79,
+          "success_rate": 0.7596153846153846,
+          "regression_all": {
+            "slope": 0.09776234740781115,
+            "intercept": 0.06114415607112803,
+            "r2": 0.0027833418780943697,
+            "pearson": 0.05275738695286578,
+            "n": 104,
+            "slope_ci_95": {
+              "lo": -0.25580810135722376,
+              "hi": 0.3942093772320776
+            },
+            "label": "all_valid",
+            "perturbation_span_m": 0.1494346431843008,
+            "mean_grasp_error_m": 0.07004955396681783,
+            "max_grasp_error_m": 0.3345539574138295
+          },
+          "regression_successes": {
+            "slope": 0.22523246863563104,
+            "intercept": 0.04244558493092074,
+            "r2": 0.01994534458057795,
+            "pearson": 0.14122798795061056,
+            "n": 79,
+            "slope_ci_95": {
+              "lo": 0.03283778590972654,
+              "hi": 0.46441286397315656
+            },
+            "label": "successes",
+            "perturbation_span_m": 0.1494346431843008,
+            "mean_grasp_error_m": 0.06237147599595591,
+            "max_grasp_error_m": 0.3345539574138295
+          },
+          "success_bins": [
+            {
+              "label": "0-5cm",
+              "n": 16,
+              "n_success": 12,
+              "success_rate": 0.75
+            },
+            {
+              "label": "5-10cm",
+              "n": 29,
+              "n_success": 25,
+              "success_rate": 0.8620689655172413
+            },
+            {
+              "label": "10-15cm",
+              "n": 59,
+              "n_success": 42,
+              "success_rate": 0.711864406779661
+            }
+          ]
+        }
+      },
+      "success_bins_note": [
+        "0-5cm: n=16, success=50%",
+        "5-10cm: n=29, success=28%",
+        "10-15cm: n=59, success=8%"
+      ]
+    },
+    {
+      "half_width_m": 0.15,
+      "controls": {
+        "replayer": {
+          "slope": 0.7140837699355259,
+          "intercept": 0.06253951534025523,
+          "r2": 0.26889151672775946,
+          "pearson": 0.5185475067221509,
+          "n": 25,
+          "slope_ci_95": {
+            "lo": 0.3078241671729673,
+            "hi": 1.210719988357303
+          },
+          "label": "replayer",
+          "perturbation_span_m": 0.21213203435596423,
+          "mean_grasp_error_m": 0.16292349776293777,
+          "max_grasp_error_m": 0.30237680351392043
+        },
+        "oracle": {
+          "slope": 0.0,
+          "intercept": 0.0,
+          "r2": NaN,
+          "pearson": NaN,
+          "n": 25,
+          "slope_ci_95": {
+            "lo": 0.0,
+            "hi": 0.0
+          },
+          "label": "oracle",
+          "perturbation_span_m": 0.21213203435596423,
+          "mean_grasp_error_m": 0.0,
+          "max_grasp_error_m": 0.0
+        }
+      },
+      "models": {
+        "openvla": {
+          "exists": true,
+          "path": "wide_task0_openvla_w15cm_rollouts.csv",
+          "n_valid": 103,
+          "n_skipped": 22,
+          "n_success": 11,
+          "success_rate": 0.10679611650485436,
+          "regression_all": {
+            "slope": 0.9476902491987266,
+            "intercept": 0.041753957730530714,
+            "r2": 0.35226549953515685,
+            "pearson": 0.5935195864798036,
+            "n": 103,
+            "slope_ci_95": {
+              "lo": 0.7576573253953355,
+              "hi": 1.1352245384384618
+            },
+            "label": "all_valid",
+            "perturbation_span_m": 0.21221137984726496,
+            "mean_grasp_error_m": 0.17230580861866227,
+            "max_grasp_error_m": 0.3685238745327701
+          },
+          "regression_successes": {
+            "slope": 1.3291850161546115,
+            "intercept": 0.023478896106487214,
+            "r2": 0.4433627313351469,
+            "pearson": 0.6658548875957488,
+            "n": 11,
+            "slope_ci_95": {
+              "lo": 0.21718792784725527,
+              "hi": 2.469956930642253
+            },
+            "label": "successes",
+            "perturbation_span_m": 0.16769947601068041,
+            "mean_grasp_error_m": 0.11464680393785823,
+            "max_grasp_error_m": 0.3685238745327701
+          },
+          "success_bins": [
+            {
+              "label": "0-5cm",
+              "n": 5,
+              "n_success": 4,
+              "success_rate": 0.8
+            },
+            {
+              "label": "5-10cm",
+              "n": 20,
+              "n_success": 4,
+              "success_rate": 0.2
+            },
+            {
+              "label": "10-15cm",
+              "n": 25,
+              "n_success": 2,
+              "success_rate": 0.08
+            },
+            {
+              "label": "15-20cm",
+              "n": 37,
+              "n_success": 1,
+              "success_rate": 0.02702702702702703
+            },
+            {
+              "label": "20-21cm",
+              "n": 16,
+              "n_success": 0,
+              "success_rate": 0.0
+            }
+          ]
+        },
+        "pi05": {
+          "exists": true,
+          "path": "wide_task0_pi05_w15cm_rollouts.csv",
+          "n_valid": 103,
+          "n_skipped": 22,
+          "n_success": 61,
+          "success_rate": 0.5922330097087378,
+          "regression_all": {
+            "slope": 0.2912713328762258,
+            "intercept": 0.05218372758549094,
+            "r2": 0.05132731608577856,
+            "pearson": 0.22655532676540324,
+            "n": 103,
+            "slope_ci_95": {
+              "lo": 0.0822213316454765,
+              "hi": 0.48398389238094575
+            },
+            "label": "all_valid",
+            "perturbation_span_m": 0.21221137984729765,
+            "mean_grasp_error_m": 0.09230866466255426,
+            "max_grasp_error_m": 0.36852387453277347
+          },
+          "regression_successes": {
+            "slope": 0.10584051749998735,
+            "intercept": 0.053012814682774335,
+            "r2": 0.01066098421061934,
+            "pearson": 0.1032520421619808,
+            "n": 61,
+            "slope_ci_95": {
+              "lo": -0.024818552263591268,
+              "hi": 0.25867777309584494
+            },
+            "label": "successes",
+            "perturbation_span_m": 0.21211730483220093,
+            "mean_grasp_error_m": 0.06641990351353408,
+            "max_grasp_error_m": 0.36852387453277347
+          },
+          "success_bins": [
+            {
+              "label": "0-5cm",
+              "n": 5,
+              "n_success": 5,
+              "success_rate": 1.0
+            },
+            {
+              "label": "5-10cm",
+              "n": 20,
+              "n_success": 14,
+              "success_rate": 0.7
+            },
+            {
+              "label": "10-15cm",
+              "n": 25,
+              "n_success": 16,
+              "success_rate": 0.64
+            },
+            {
+              "label": "15-20cm",
+              "n": 37,
+              "n_success": 17,
+              "success_rate": 0.4594594594594595
+            },
+            {
+              "label": "20-21cm",
+              "n": 16,
+              "n_success": 9,
+              "success_rate": 0.5625
+            }
+          ]
+        }
+      },
+      "success_bins_note": [
+        "0-5cm: n=5, success=80%",
+        "5-10cm: n=20, success=20%",
+        "10-15cm: n=25, success=8%",
+        "15-20cm: n=37, success=3%",
+        "20-21cm: n=16, success=0%"
+      ]
+    },
+    {
+      "half_width_m": 0.2,
+      "controls": {
+        "replayer": {
+          "slope": 0.808705534447195,
+          "intercept": 0.05304165487636571,
+          "r2": 0.4321805803847679,
+          "pearson": 0.6574044268064886,
+          "n": 25,
+          "slope_ci_95": {
+            "lo": 0.48113208803807966,
+            "hi": 1.221670038246235
+          },
+          "label": "replayer",
+          "perturbation_span_m": 0.282842712474619,
+          "mean_grasp_error_m": 0.20462253016107382,
+          "max_grasp_error_m": 0.3725992429720031
+        },
+        "oracle": {
+          "slope": 0.0,
+          "intercept": 0.0,
+          "r2": NaN,
+          "pearson": NaN,
+          "n": 25,
+          "slope_ci_95": {
+            "lo": 0.0,
+            "hi": 0.0
+          },
+          "label": "oracle",
+          "perturbation_span_m": 0.282842712474619,
+          "mean_grasp_error_m": 0.0,
+          "max_grasp_error_m": 0.0
+        }
+      },
+      "models": {
+        "openvla": {
+          "exists": true,
+          "path": "wide_task0_openvla_w20cm_rollouts.csv",
+          "n_valid": 103,
+          "n_skipped": 22,
+          "n_success": 9,
+          "success_rate": 0.08737864077669903,
+          "regression_all": {
+            "slope": 0.6640595189916156,
+            "intercept": 0.09475928501355829,
+            "r2": 0.2967030116142627,
+            "pearson": 0.5447045177105315,
+            "n": 103,
+            "slope_ci_95": {
+              "lo": 0.4474440619030021,
+              "hi": 0.8396508810478037
+            },
+            "label": "all_valid",
+            "perturbation_span_m": 0.29466564208922963,
+            "mean_grasp_error_m": 0.22102316865893815,
+            "max_grasp_error_m": 0.4015444533394418
+          },
+          "regression_successes": {
+            "slope": 0.604018587287018,
+            "intercept": 0.10163606084757444,
+            "r2": 0.11884585405516412,
+            "pearson": 0.34474027042857086,
+            "n": 9,
+            "slope_ci_95": {
+              "lo": -0.3172159168975124,
+              "hi": 2.6654581471570844
+            },
+            "label": "successes",
+            "perturbation_span_m": 0.2236234236451141,
+            "mean_grasp_error_m": 0.14429932834661277,
+            "max_grasp_error_m": 0.3343409812504323
+          },
+          "success_bins": [
+            {
+              "label": "0-5cm",
+              "n": 5,
+              "n_success": 4,
+              "success_rate": 0.8
+            },
+            {
+              "label": "5-10cm",
+              "n": 7,
+              "n_success": 1,
+              "success_rate": 0.14285714285714285
+            },
+            {
+              "label": "10-15cm",
+              "n": 22,
+              "n_success": 3,
+              "success_rate": 0.13636363636363635
+            },
+            {
+              "label": "15-20cm",
+              "n": 8,
+              "n_success": 0,
+              "success_rate": 0.0
+            },
+            {
+              "label": "20-29cm",
+              "n": 61,
+              "n_success": 1,
+              "success_rate": 0.01639344262295082
+            }
+          ]
+        },
+        "pi05": {
+          "exists": true,
+          "path": "wide_task0_pi05_w20cm_rollouts.csv",
+          "n_valid": 103,
+          "n_skipped": 22,
+          "n_success": 56,
+          "success_rate": 0.5436893203883495,
+          "regression_all": {
+            "slope": 0.5404211458190216,
+            "intercept": 0.02476536272663841,
+            "r2": 0.15135318945999998,
+            "pearson": 0.38904137242714915,
+            "n": 103,
+            "slope_ci_95": {
+              "lo": 0.29165074783988143,
+              "hi": 0.7903177247215316
+            },
+            "label": "all_valid",
+            "perturbation_span_m": 0.2946656420892297,
+            "mean_grasp_error_m": 0.12752071932300646,
+            "max_grasp_error_m": 0.4141122437217674
+          },
+          "regression_successes": {
+            "slope": -0.13976060759702075,
+            "intercept": 0.08920843026503215,
+            "r2": 0.027146349276079507,
+            "pearson": -0.16476149209108126,
+            "n": 56,
+            "slope_ci_95": {
+              "lo": -0.359784501854296,
+              "hi": -0.005051607181260733
+            },
+            "label": "successes",
+            "perturbation_span_m": 0.29117250358071417,
+            "mean_grasp_error_m": 0.06755627659296455,
+            "max_grasp_error_m": 0.3345539574139149
+          },
+          "success_bins": [
+            {
+              "label": "0-5cm",
+              "n": 5,
+              "n_success": 5,
+              "success_rate": 1.0
+            },
+            {
+              "label": "5-10cm",
+              "n": 7,
+              "n_success": 7,
+              "success_rate": 1.0
+            },
+            {
+              "label": "10-15cm",
+              "n": 22,
+              "n_success": 19,
+              "success_rate": 0.8636363636363636
+            },
+            {
+              "label": "15-20cm",
+              "n": 8,
+              "n_success": 0,
+              "success_rate": 0.0
+            },
+            {
+              "label": "20-29cm",
+              "n": 61,
+              "n_success": 25,
+              "success_rate": 0.4098360655737705
+            }
+          ]
+        }
+      },
+      "success_bins_note": [
+        "0-5cm: n=5, success=80%",
+        "5-10cm: n=7, success=14%",
+        "10-15cm: n=22, success=14%",
+        "15-20cm: n=8, success=0%",
+        "20-29cm: n=61, success=2%"
+      ]
+    }
+  ],
+  "resolving_ranges": [
+    {
+      "half_cm": 20,
+      "model": "pi05",
+      "n_success": 56,
+      "slope": -0.13976060759702075
+    }
+  ],
+  "outcome": "OUTCOME 3 \u2014 STRUCTURAL LIMITATION: discriminating range and success range do not overlap",
+  "rationale": [
+    "\u00b110cm: OpenVLA success=20% (n_succ=21), Pi0.5 success=76% (n_succ=79), replayer R\u00b2=0.10",
+    "\u00b115cm: OpenVLA success=11% (n_succ=11), Pi0.5 success=59% (n_succ=61), replayer R\u00b2=0.27",
+    "\u00b120cm: OpenVLA success=9% (n_succ=9), Pi0.5 success=54% (n_succ=56), replayer R\u00b2=0.43",
+    "Metric-resolving range \u00b120cm: replayer slope=0.81, R\u00b2=0.43.",
+    "OpenVLA at \u00b120cm: only 9 successes (<10) \u2014 not measurable where metric resolves.",
+    "Pi0.5 at \u00b120cm: slope=-0.140, R\u00b2=0.027, n=56 (grounded if |slope|<0.40).",
+    "Pi0.5 is flat/grounded at \u00b120cm (the only metric-resolving range).",
+    "OpenVLA success collapses to 9% (n=9) at \u00b120cm \u2014 cannot test it where the metric works.",
+    "Cross-model position-grounding comparison is blocked by a catch-radius/OOD bind."
+  ]
+}

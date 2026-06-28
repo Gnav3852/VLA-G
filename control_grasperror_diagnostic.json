@@ -1,0 +1,212 @@
+{
+  "tasks": [
+    {
+      "task_id": 0,
+      "center_x": -0.06,
+      "center_y": 0.2,
+      "source_rollout_id": 6,
+      "narrow_replayer": {
+        "slope": 0.5504147765043754,
+        "intercept": 0.07322867420952212,
+        "r2": 0.09026901275630983,
+        "pearson": 0.30044802005723026,
+        "n": 62,
+        "slope_ci_95": {
+          "lo": 0.21428411888521445,
+          "hi": 0.939381214233734
+        },
+        "label": "narrow_replayer",
+        "perturbation_span_m": 0.10242131279103178,
+        "mean_grasp_error_m": 0.10849693852870348,
+        "max_grasp_error_m": 0.1914918482488737
+      },
+      "narrow_oracle": {
+        "slope": -2.278002129481182e-16,
+        "intercept": 0.038531693928817695,
+        "r2": -5.640449438202247,
+        "pearson": -0.02960291436423951,
+        "n": 62,
+        "slope_ci_95": {
+          "lo": -5.696995234153061e-16,
+          "hi": 4.0761769230321616e-16
+        },
+        "label": "narrow_oracle",
+        "perturbation_span_m": 0.10242131279103178,
+        "mean_grasp_error_m": 0.03853169392881771,
+        "max_grasp_error_m": 0.0385316939288177
+      },
+      "narrow_openvla": {
+        "slope": 0.12286427943531947,
+        "intercept": 0.0460379208559361,
+        "r2": 0.012960021549785372,
+        "pearson": 0.11384209041380745,
+        "n": 16,
+        "slope_ci_95": {
+          "lo": -0.351258246267814,
+          "hi": 0.9459581748857449
+        },
+        "label": "narrow_openvla",
+        "perturbation_span_m": 0.09624018206354565,
+        "mean_grasp_error_m": 0.05224543094867026,
+        "max_grasp_error_m": 0.15174065580027535
+      },
+      "narrow_pi05": {
+        "slope": 0.03777887530941689,
+        "intercept": 0.045253366473711136,
+        "r2": 0.0013182763479071546,
+        "pearson": 0.036308075519189686,
+        "n": 41,
+        "slope_ci_95": {
+          "lo": -0.1950929457501831,
+          "hi": 0.35945132402405083
+        },
+        "label": "narrow_pi05",
+        "perturbation_span_m": 0.10242131279103178,
+        "mean_grasp_error_m": 0.047516089834361154,
+        "max_grasp_error_m": 0.17286278078121156
+      },
+      "wide_replayer": {
+        "slope": 0.8094532939185017,
+        "intercept": 0.049934975840081636,
+        "r2": 0.37563112002539645,
+        "pearson": 0.612887526407086,
+        "n": 289,
+        "slope_ci_95": {
+          "lo": 0.7026768532837765,
+          "hi": 0.9222540463521226
+        },
+        "label": "wide_replayer",
+        "perturbation_span_m": 0.28284271247461895,
+        "mean_grasp_error_m": 0.18136446021773386,
+        "max_grasp_error_m": 0.372599242972003
+      },
+      "wide_oracle": {
+        "slope": 0.0,
+        "intercept": 0.0,
+        "r2": NaN,
+        "pearson": NaN,
+        "n": 289,
+        "slope_ci_95": {
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "label": "wide_oracle",
+        "perturbation_span_m": 0.28284271247461895,
+        "mean_grasp_error_m": 0.0,
+        "max_grasp_error_m": 0.0
+      },
+      "verdict": "METRIC WORKS ONLY AT WIDE RANGE: replayer detection fails at \u00b17cm (R\u00b2 below threshold) but succeeds at \u00b120cm. \u2192 the real-model range was too narrow; real models must be re-tested at wider displacement before any conclusion. Detector is fine, experiment range was off.",
+      "rationale": [
+        "Narrow replayer: slope=0.550, R\u00b2=0.090, CI=[0.214, 0.939]",
+        "Wide replayer: slope=0.809, R\u00b2=0.376, CI=[0.703, 0.922]",
+        "Narrow oracle (make_controls g=1): slope=-0.000, mean error=3.9cm (flat vs displacement)",
+        "Wide ideal oracle: slope=0.000, mean error=0.0cm",
+        "At \u00b17cm: positive slope (0.55) but R\u00b2=0.09 (below 0.3 bar) \u2014 not a reliable detection."
+      ]
+    },
+    {
+      "task_id": 2,
+      "center_x": -0.075,
+      "center_y": 0.0,
+      "source_rollout_id": 66,
+      "narrow_replayer": {
+        "slope": 0.4119340029929821,
+        "intercept": 0.08190077801137317,
+        "r2": 0.05449920460325386,
+        "pearson": 0.2334506470396989,
+        "n": 72,
+        "slope_ci_95": {
+          "lo": 0.07164617307936097,
+          "hi": 0.7582733782590365
+        },
+        "label": "narrow_replayer",
+        "perturbation_span_m": 0.0995559933641271,
+        "mean_grasp_error_m": 0.10842233710073962,
+        "max_grasp_error_m": 0.18162375820009607
+      },
+      "narrow_oracle": {
+        "slope": -3.485709629993668e-16,
+        "intercept": 0.038454700231848424,
+        "r2": -8.046875,
+        "pearson": 0.5919099623163971,
+        "n": 72,
+        "slope_ci_95": {
+          "lo": -3.3511240774756575e-16,
+          "hi": 6.448279158617432e-16
+        },
+        "label": "narrow_oracle",
+        "perturbation_span_m": 0.0995559933641271,
+        "mean_grasp_error_m": 0.03845470023184842,
+        "max_grasp_error_m": 0.03845470023184843
+      },
+      "narrow_openvla": {
+        "slope": 0.08420904383697549,
+        "intercept": 0.04429815364596752,
+        "r2": 0.019225951033825295,
+        "pearson": 0.13865767571189452,
+        "n": 20,
+        "slope_ci_95": {
+          "lo": -0.18023845313115983,
+          "hi": 0.4884380715626213
+        },
+        "label": "narrow_openvla",
+        "perturbation_span_m": 0.0995559933641271,
+        "mean_grasp_error_m": 0.04837625846934247,
+        "max_grasp_error_m": 0.08346108254843794
+      },
+      "narrow_pi05": {
+        "slope": -0.08556254704548742,
+        "intercept": 0.0452342654253598,
+        "r2": 0.013376613763885992,
+        "pearson": -0.11565731176145289,
+        "n": 72,
+        "slope_ci_95": {
+          "lo": -0.326407267642352,
+          "hi": 0.05899890999461017
+        },
+        "label": "narrow_pi05",
+        "perturbation_span_m": 0.0995559933641271,
+        "mean_grasp_error_m": 0.03972548943013748,
+        "max_grasp_error_m": 0.1703473504111686
+      },
+      "wide_replayer": {
+        "slope": 0.8255133201949384,
+        "intercept": 0.04548167712440662,
+        "r2": 0.40581287138676847,
+        "pearson": 0.637034435008633,
+        "n": 289,
+        "slope_ci_95": {
+          "lo": 0.7196525970367782,
+          "hi": 0.9303782920567639
+        },
+        "label": "wide_replayer",
+        "perturbation_span_m": 0.2828427124746191,
+        "mean_grasp_error_m": 0.1795187992601135,
+        "max_grasp_error_m": 0.36925229522854336
+      },
+      "wide_oracle": {
+        "slope": 0.0,
+        "intercept": 0.0,
+        "r2": NaN,
+        "pearson": NaN,
+        "n": 289,
+        "slope_ci_95": {
+          "lo": 0.0,
+          "hi": 0.0
+        },
+        "label": "wide_oracle",
+        "perturbation_span_m": 0.2828427124746191,
+        "mean_grasp_error_m": 0.0,
+        "max_grasp_error_m": 0.0
+      },
+      "verdict": "METRIC WORKS ONLY AT WIDE RANGE: replayer detection fails at \u00b17cm (R\u00b2 below threshold) but succeeds at \u00b120cm. \u2192 the real-model range was too narrow; real models must be re-tested at wider displacement before any conclusion. Detector is fine, experiment range was off.",
+      "rationale": [
+        "Narrow replayer: slope=0.412, R\u00b2=0.054, CI=[0.072, 0.758]",
+        "Wide replayer: slope=0.826, R\u00b2=0.406, CI=[0.720, 0.930]",
+        "Narrow oracle (make_controls g=1): slope=-0.000, mean error=3.8cm (flat vs displacement)",
+        "Wide ideal oracle: slope=0.000, mean error=0.0cm",
+        "At \u00b17cm: positive slope (0.41) but R\u00b2=0.05 (below 0.3 bar) \u2014 not a reliable detection."
+      ]
+    }
+  ]
+}

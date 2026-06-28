@@ -1,0 +1,567 @@
+{
+  "task_id": 0,
+  "suite": "libero_spatial",
+  "n_conditions": 56,
+  "conditions": [
+    {
+      "model": "pi05",
+      "variant": "mask_target",
+      "mode": "background_fill",
+      "suite": "libero_spatial",
+      "setting": "target_bg",
+      "action_sensitivity": 0.831902432805229,
+      "raw_sensitivity": 0.831902432805229,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "pi05",
+      "variant": "mask_target",
+      "mode": "black",
+      "suite": "libero_spatial",
+      "setting": "target_black",
+      "action_sensitivity": 0.6882101944115986,
+      "raw_sensitivity": 0.6882101944115986,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "pi05",
+      "variant": "mask_target",
+      "mode": "mosaic",
+      "suite": "libero_spatial",
+      "setting": "target_mosaic",
+      "action_sensitivity": 0.4310767151808913,
+      "raw_sensitivity": 0.4310767151808913,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "pi05",
+      "variant": "mask_gripper",
+      "mode": "background_fill",
+      "suite": "libero_spatial",
+      "setting": "gripper_bg",
+      "action_sensitivity": 0.3006192882182532,
+      "raw_sensitivity": 0.3006192882182532,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "pi05",
+      "variant": "mask_gripper",
+      "mode": "black",
+      "suite": "libero_spatial",
+      "setting": "gripper_black",
+      "action_sensitivity": 0.009453436736423057,
+      "raw_sensitivity": 0.009453436736423057,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "pi05",
+      "variant": "mask_gripper",
+      "mode": "mosaic",
+      "suite": "libero_spatial",
+      "setting": "gripper_mosaic",
+      "action_sensitivity": 0.056720620418538335,
+      "raw_sensitivity": 0.056720620418538335,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "pi05",
+      "variant": "mask_robot",
+      "mode": "background_fill",
+      "suite": "libero_spatial",
+      "setting": "robot_bg",
+      "action_sensitivity": 0.45565565069559133,
+      "raw_sensitivity": 0.45565565069559133,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "pi05",
+      "variant": "mask_robot",
+      "mode": "black",
+      "suite": "libero_spatial",
+      "setting": "robot_black",
+      "action_sensitivity": 0.007562749389138419,
+      "raw_sensitivity": 0.007562749389138419,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "pi05",
+      "variant": "mask_robot",
+      "mode": "mosaic",
+      "suite": "libero_spatial",
+      "setting": "robot_mosaic",
+      "action_sensitivity": 0.05861130776582298,
+      "raw_sensitivity": 0.05861130776582298,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "pi05",
+      "variant": "mask_robot_exc_gripper",
+      "mode": "background_fill",
+      "suite": "libero_spatial",
+      "setting": "robot_wo_gripper_bg",
+      "action_sensitivity": 0.0,
+      "raw_sensitivity": 0.0,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "pi05",
+      "variant": "mask_robot_exc_gripper",
+      "mode": "black",
+      "suite": "libero_spatial",
+      "setting": "robot_wo_gripper_black",
+      "action_sensitivity": 0.0,
+      "raw_sensitivity": 0.0,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "pi05",
+      "variant": "mask_robot_exc_gripper",
+      "mode": "mosaic",
+      "suite": "libero_spatial",
+      "setting": "robot_wo_gripper_mosaic",
+      "action_sensitivity": 0.0,
+      "raw_sensitivity": 0.0,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "pi05",
+      "variant": "mask_background",
+      "mode": "black",
+      "suite": "libero_spatial",
+      "setting": "background_black",
+      "action_sensitivity": 0.2703682906616994,
+      "raw_sensitivity": 0.2703682906616994,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "pi05",
+      "variant": "mask_background",
+      "mode": "mosaic",
+      "suite": "libero_spatial",
+      "setting": "background_mosaic",
+      "action_sensitivity": 0.026469622861984534,
+      "raw_sensitivity": 0.026469622861984534,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla",
+      "variant": "mask_target",
+      "mode": "background_fill",
+      "suite": "libero_spatial",
+      "setting": "target_bg",
+      "action_sensitivity": 0.1013684163862109,
+      "raw_sensitivity": 0.1013684163862109,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla",
+      "variant": "mask_target",
+      "mode": "black",
+      "suite": "libero_spatial",
+      "setting": "target_black",
+      "action_sensitivity": 0.03851999822676015,
+      "raw_sensitivity": 0.03851999822676015,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla",
+      "variant": "mask_target",
+      "mode": "mosaic",
+      "suite": "libero_spatial",
+      "setting": "target_mosaic",
+      "action_sensitivity": 0.022796106661736266,
+      "raw_sensitivity": 0.022796106661736266,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla",
+      "variant": "mask_gripper",
+      "mode": "background_fill",
+      "suite": "libero_spatial",
+      "setting": "gripper_bg",
+      "action_sensitivity": 0.14302376330584687,
+      "raw_sensitivity": 0.14302376330584687,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla",
+      "variant": "mask_gripper",
+      "mode": "black",
+      "suite": "libero_spatial",
+      "setting": "gripper_black",
+      "action_sensitivity": 0.021216645290137164,
+      "raw_sensitivity": 0.021216645290137164,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla",
+      "variant": "mask_gripper",
+      "mode": "mosaic",
+      "suite": "libero_spatial",
+      "setting": "gripper_mosaic",
+      "action_sensitivity": 0.06287199220977313,
+      "raw_sensitivity": 0.06287199220977313,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla",
+      "variant": "mask_robot",
+      "mode": "background_fill",
+      "suite": "libero_spatial",
+      "setting": "robot_bg",
+      "action_sensitivity": 0.18781445891835866,
+      "raw_sensitivity": 0.18781445891835866,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla",
+      "variant": "mask_robot",
+      "mode": "black",
+      "suite": "libero_spatial",
+      "setting": "robot_black",
+      "action_sensitivity": 0.17996430016100792,
+      "raw_sensitivity": 0.17996430016100792,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla",
+      "variant": "mask_robot",
+      "mode": "mosaic",
+      "suite": "libero_spatial",
+      "setting": "robot_mosaic",
+      "action_sensitivity": 0.18309964885388372,
+      "raw_sensitivity": 0.18309964885388372,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla",
+      "variant": "mask_robot_exc_gripper",
+      "mode": "background_fill",
+      "suite": "libero_spatial",
+      "setting": "robot_wo_gripper_bg",
+      "action_sensitivity": 0.1359515482091345,
+      "raw_sensitivity": 0.1359515482091345,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla",
+      "variant": "mask_robot_exc_gripper",
+      "mode": "black",
+      "suite": "libero_spatial",
+      "setting": "robot_wo_gripper_black",
+      "action_sensitivity": 0.1131554415473982,
+      "raw_sensitivity": 0.1131554415473982,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla",
+      "variant": "mask_robot_exc_gripper",
+      "mode": "mosaic",
+      "suite": "libero_spatial",
+      "setting": "robot_wo_gripper_mosaic",
+      "action_sensitivity": 0.07072215096712388,
+      "raw_sensitivity": 0.07072215096712388,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla",
+      "variant": "mask_background",
+      "mode": "black",
+      "suite": "libero_spatial",
+      "setting": "background_black",
+      "action_sensitivity": 0.07623847874255955,
+      "raw_sensitivity": 0.07623847874255955,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla",
+      "variant": "mask_background",
+      "mode": "mosaic",
+      "suite": "libero_spatial",
+      "setting": "background_mosaic",
+      "action_sensitivity": 0.0,
+      "raw_sensitivity": 0.0,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla_oft",
+      "variant": "mask_target",
+      "mode": "background_fill",
+      "suite": "libero_spatial",
+      "setting": "target_bg",
+      "action_sensitivity": 0.85,
+      "raw_sensitivity": 0.85,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla_oft",
+      "variant": "mask_target",
+      "mode": "black",
+      "suite": "libero_spatial",
+      "setting": "target_black",
+      "action_sensitivity": 0.7392424242424241,
+      "raw_sensitivity": 0.7392424242424241,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla_oft",
+      "variant": "mask_target",
+      "mode": "mosaic",
+      "suite": "libero_spatial",
+      "setting": "target_mosaic",
+      "action_sensitivity": 0.21636363636363634,
+      "raw_sensitivity": 0.21636363636363634,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla_oft",
+      "variant": "mask_gripper",
+      "mode": "background_fill",
+      "suite": "libero_spatial",
+      "setting": "gripper_bg",
+      "action_sensitivity": 0.005151515151515042,
+      "raw_sensitivity": 0.005151515151515042,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla_oft",
+      "variant": "mask_gripper",
+      "mode": "black",
+      "suite": "libero_spatial",
+      "setting": "gripper_black",
+      "action_sensitivity": 0.0,
+      "raw_sensitivity": 0.0,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla_oft",
+      "variant": "mask_gripper",
+      "mode": "mosaic",
+      "suite": "libero_spatial",
+      "setting": "gripper_mosaic",
+      "action_sensitivity": 0.0,
+      "raw_sensitivity": 0.0,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla_oft",
+      "variant": "mask_robot",
+      "mode": "background_fill",
+      "suite": "libero_spatial",
+      "setting": "robot_bg",
+      "action_sensitivity": 0.1468181818181817,
+      "raw_sensitivity": 0.1468181818181817,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla_oft",
+      "variant": "mask_robot",
+      "mode": "black",
+      "suite": "libero_spatial",
+      "setting": "robot_black",
+      "action_sensitivity": 0.07727272727272727,
+      "raw_sensitivity": 0.07727272727272727,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla_oft",
+      "variant": "mask_robot",
+      "mode": "mosaic",
+      "suite": "libero_spatial",
+      "setting": "robot_mosaic",
+      "action_sensitivity": 0.015454545454545492,
+      "raw_sensitivity": 0.015454545454545492,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla_oft",
+      "variant": "mask_robot_exc_gripper",
+      "mode": "background_fill",
+      "suite": "libero_spatial",
+      "setting": "robot_wo_gripper_bg",
+      "action_sensitivity": 0.0309090909090908,
+      "raw_sensitivity": 0.0309090909090908,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla_oft",
+      "variant": "mask_robot_exc_gripper",
+      "mode": "black",
+      "suite": "libero_spatial",
+      "setting": "robot_wo_gripper_black",
+      "action_sensitivity": 0.023181818181818144,
+      "raw_sensitivity": 0.023181818181818144,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla_oft",
+      "variant": "mask_robot_exc_gripper",
+      "mode": "mosaic",
+      "suite": "libero_spatial",
+      "setting": "robot_wo_gripper_mosaic",
+      "action_sensitivity": 0.02060606060606053,
+      "raw_sensitivity": 0.02060606060606053,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla_oft",
+      "variant": "mask_background",
+      "mode": "black",
+      "suite": "libero_spatial",
+      "setting": "background_black",
+      "action_sensitivity": 0.12363636363636356,
+      "raw_sensitivity": 0.12363636363636356,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "openvla_oft",
+      "variant": "mask_background",
+      "mode": "mosaic",
+      "suite": "libero_spatial",
+      "setting": "background_mosaic",
+      "action_sensitivity": 0.05924242424242416,
+      "raw_sensitivity": 0.05924242424242416,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "x_vla",
+      "variant": "mask_target",
+      "mode": "background_fill",
+      "suite": "libero_spatial",
+      "setting": "target_bg",
+      "action_sensitivity": 0.9,
+      "raw_sensitivity": 0.9,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "x_vla",
+      "variant": "mask_target",
+      "mode": "black",
+      "suite": "libero_spatial",
+      "setting": "target_black",
+      "action_sensitivity": 0.7912921348314607,
+      "raw_sensitivity": 0.7912921348314607,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "x_vla",
+      "variant": "mask_target",
+      "mode": "mosaic",
+      "suite": "libero_spatial",
+      "setting": "target_mosaic",
+      "action_sensitivity": 0.27808988764044945,
+      "raw_sensitivity": 0.27808988764044945,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "x_vla",
+      "variant": "mask_gripper",
+      "mode": "background_fill",
+      "suite": "libero_spatial",
+      "setting": "gripper_bg",
+      "action_sensitivity": 0.07078651685393252,
+      "raw_sensitivity": 0.07078651685393252,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "x_vla",
+      "variant": "mask_gripper",
+      "mode": "black",
+      "suite": "libero_spatial",
+      "setting": "gripper_black",
+      "action_sensitivity": 0.06573033707865172,
+      "raw_sensitivity": 0.06573033707865172,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "x_vla",
+      "variant": "mask_gripper",
+      "mode": "mosaic",
+      "suite": "libero_spatial",
+      "setting": "gripper_mosaic",
+      "action_sensitivity": 0.053089887640449474,
+      "raw_sensitivity": 0.053089887640449474,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "x_vla",
+      "variant": "mask_robot",
+      "mode": "background_fill",
+      "suite": "libero_spatial",
+      "setting": "robot_bg",
+      "action_sensitivity": 0.20983146067415723,
+      "raw_sensitivity": 0.20983146067415723,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "x_vla",
+      "variant": "mask_robot",
+      "mode": "black",
+      "suite": "libero_spatial",
+      "setting": "robot_black",
+      "action_sensitivity": 0.1415730337078652,
+      "raw_sensitivity": 0.1415730337078652,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "x_vla",
+      "variant": "mask_robot",
+      "mode": "mosaic",
+      "suite": "libero_spatial",
+      "setting": "robot_mosaic",
+      "action_sensitivity": 0.08089887640449446,
+      "raw_sensitivity": 0.08089887640449446,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "x_vla",
+      "variant": "mask_robot_exc_gripper",
+      "mode": "background_fill",
+      "suite": "libero_spatial",
+      "setting": "robot_wo_gripper_bg",
+      "action_sensitivity": 0.096067415730337,
+      "raw_sensitivity": 0.096067415730337,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "x_vla",
+      "variant": "mask_robot_exc_gripper",
+      "mode": "black",
+      "suite": "libero_spatial",
+      "setting": "robot_wo_gripper_black",
+      "action_sensitivity": 0.08848314606741572,
+      "raw_sensitivity": 0.08848314606741572,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "x_vla",
+      "variant": "mask_robot_exc_gripper",
+      "mode": "mosaic",
+      "suite": "libero_spatial",
+      "setting": "robot_wo_gripper_mosaic",
+      "action_sensitivity": 0.08595505617977524,
+      "raw_sensitivity": 0.08595505617977524,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "x_vla",
+      "variant": "mask_background",
+      "mode": "black",
+      "suite": "libero_spatial",
+      "setting": "background_black",
+      "action_sensitivity": 0.18707865168539323,
+      "raw_sensitivity": 0.18707865168539323,
+      "source": "position_scaled_proxy"
+    },
+    {
+      "model": "x_vla",
+      "variant": "mask_background",
+      "mode": "mosaic",
+      "suite": "libero_spatial",
+      "setting": "background_mosaic",
+      "action_sensitivity": 0.12387640449438198,
+      "raw_sensitivity": 0.12387640449438198,
+      "source": "position_scaled_proxy"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "task_id": 0,
+  "calibration_anchors": {
+    "replayer_raw": 0.0,
+    "oracle_raw": 0.1587431897528205
+  },
+  "models": {
+    "openvla": {
+      "n_valid": 62,
+      "center_x": -0.061506291658897747,
+      "center_y": 0.20217547890500845,
+      "n_pairs": 59,
+      "n_success_pairs": 10,
+      "raw_sensitivity_per_m": 0.18781445891835866,
+      "raw_sensitivity_success_only": 0.11004978158791459,
+      "calibrated_0_1": 1.0,
+      "calibrated_success_only_0_1": 0.6932567107872372,
+      "vla_trace_whitebox": {
+        "model": "openvla",
+        "visual_dependency": 0.6865057184689206,
+        "attention_mass_object": 0.5882,
+        "patchmask_target_bg_avg_drop": 47.75
+      }
+    },
+    "pi05": {
+      "n_valid": 62,
+      "center_x": -0.061506291658819996,
+      "center_y": 0.20217547890502405,
+      "n_pairs": 59,
+      "n_success_pairs": 38,
+      "raw_sensitivity_per_m": 0.13205884574663349,
+      "raw_sensitivity_success_only": 0.06657500398335738,
+      "calibrated_0_1": 0.831902432805229,
+      "calibrated_success_only_0_1": 0.4193880952437803,
+      "vla_trace_whitebox": {
+        "model": "pi05",
+        "visual_dependency": 0.9895833333333334,
+        "attention_mass_object": 0.6328,
+        "patchmask_target_bg_avg_drop": 76.45
+      }
+    }
+  },
+  "separation": {
+    "action_sensitivity_calibrated_delta": 0.16809756719477098,
+    "action_sensitivity_raw_delta": 0.05575561317172517,
+    "vla_trace_visual_dependency_delta": 0.30307761486441276,
+    "vla_trace_attention_mass_delta": 0.044600000000000084,
+    "action_sensitivity_separates_more_than_visual_dep": false,
+    "action_sensitivity_separates_more_than_attn_mass": true
+  }
+}

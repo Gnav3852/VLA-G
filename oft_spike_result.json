@@ -1,0 +1,11 @@
+{
+  "model": "openvla_oft",
+  "checkpoint": "moojink/openvla-7b-oft-finetuned-libero-spatial",
+  "status": "error",
+  "success": false,
+  "num_steps": 0,
+  "error": "ImportError: peft>=0.17.0 required by diffusers but image pins peft==0.11.1 (OpenVLA-OFT fork constraint). Modal image reaches LIBERO env load; fails at openvla_utils import.",
+  "attempts": 6,
+  "assessment": "Runnable with dependency reconciliation (~1-2 days): either pin diffusers to version compatible with peft 0.11.1, or fork OFT eval imports to avoid diffusers path for L1-regression-only inference.",
+  "next_step": "./.venv/bin/modal run modal_oft_spike.py"
+}

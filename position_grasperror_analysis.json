@@ -1,0 +1,1278 @@
+{
+  "tasks": [
+    {
+      "task_id": 0,
+      "center_x": -0.06,
+      "center_y": 0.2,
+      "controls": {
+        "per_control": {
+          "ctrl_g0p00_clean": {
+            "gain": 0.0,
+            "noise": "clean",
+            "label": "control_ctrl_g0p00_clean",
+            "slope": 0.5504147765043754,
+            "intercept": 0.07322867420952212,
+            "r2": 0.09026901275630983,
+            "pearson": 0.30044802005723026,
+            "n": 62,
+            "slope_ci_95": {
+              "lo": 0.21428411888521445,
+              "hi": 0.939381214233734
+            },
+            "perturbation_span_m": 0.10242131279103178,
+            "mean_grasp_error_m": 0.10849693852870348,
+            "per_axis": {
+              "x": {
+                "slope": 0.1402328456252486,
+                "intercept": 0.08269058178664604,
+                "r2": 0.006263285861754619,
+                "pearson": 0.0791409240643207,
+                "n": 62
+              },
+              "y": {
+                "slope": 0.6174457485942452,
+                "intercept": 0.024185583008874672,
+                "r2": 0.219660605366909,
+                "pearson": 0.4686796404442044,
+                "n": 62
+              }
+            }
+          },
+          "ctrl_g0p00_noisy": {
+            "gain": 0.0,
+            "noise": "noisy",
+            "label": "control_ctrl_g0p00_noisy",
+            "slope": 0.5678933652660374,
+            "intercept": 0.0728265961604014,
+            "r2": 0.09674627544757664,
+            "pearson": 0.3110406331133871,
+            "n": 62,
+            "slope_ci_95": {
+              "lo": 0.23263366805201455,
+              "hi": 0.9596586706132731
+            },
+            "perturbation_span_m": 0.10242131279103178,
+            "mean_grasp_error_m": 0.1092148149478975,
+            "per_axis": {
+              "x": {
+                "slope": 0.17643364947823906,
+                "intercept": 0.08179679084310036,
+                "r2": 0.010130282316075934,
+                "pearson": 0.10064930360452527,
+                "n": 62
+              },
+              "y": {
+                "slope": 0.5751530289544248,
+                "intercept": 0.026939906124510377,
+                "r2": 0.1922316876638639,
+                "pearson": 0.4384423424623402,
+                "n": 62
+              }
+            }
+          },
+          "ctrl_g0p25_clean": {
+            "gain": 0.25,
+            "noise": "clean",
+            "label": "control_ctrl_g0p25_clean",
+            "slope": 0.39947978520813315,
+            "intercept": 0.06211515611177837,
+            "r2": 0.08300838490273021,
+            "pearson": 0.2881117576613812,
+            "n": 62,
+            "slope_ci_95": {
+              "lo": 0.14126424999031573,
+              "hi": 0.6967893819888481
+            },
+            "perturbation_span_m": 0.10242131279103178,
+            "mean_grasp_error_m": 0.08771214088818223,
+            "per_axis": {
+              "x": {
+                "slope": 0.10517463421893627,
+                "intercept": 0.06595260999664518,
+                "r2": 0.006263285861754619,
+                "pearson": 0.0791409240643206,
+                "n": 62
+              },
+              "y": {
+                "slope": 0.34368634419381267,
+                "intercept": 0.028375507842096557,
+                "r2": 0.102433337609241,
+                "pearson": 0.32005208577548916,
+                "n": 62
+              }
+            }
+          },
+          "ctrl_g0p25_noisy": {
+            "gain": 0.25,
+            "noise": "noisy",
+            "label": "control_ctrl_g0p25_noisy",
+            "slope": 0.37387971867652386,
+            "intercept": 0.06310347025815917,
+            "r2": 0.07433328363552927,
+            "pearson": 0.272641309481027,
+            "n": 62,
+            "slope_ci_95": {
+              "lo": 0.10961892450379962,
+              "hi": 0.6845462351330834
+            },
+            "perturbation_span_m": 0.10242131279103178,
+            "mean_grasp_error_m": 0.08706011042252434,
+            "per_axis": {
+              "x": {
+                "slope": 0.08080676428627497,
+                "intercept": 0.06619474048739499,
+                "r2": 0.003787322259459769,
+                "pearson": 0.06154122406533495,
+                "n": 62
+              },
+              "y": {
+                "slope": 0.31088782038752194,
+                "intercept": 0.029977336962417996,
+                "r2": 0.08680792240007273,
+                "pearson": 0.29463184213535515,
+                "n": 62
+              }
+            }
+          },
+          "ctrl_g0p50_clean": {
+            "gain": 0.5,
+            "noise": "clean",
+            "label": "control_ctrl_g0p50_clean",
+            "slope": 0.24985489657495766,
+            "intercept": 0.052023055734790366,
+            "r2": 0.07169086279662196,
+            "pearson": 0.2677514944806509,
+            "n": 62,
+            "slope_ci_95": {
+              "lo": 0.07650550887493378,
+              "hi": 0.4499181686633105
+            },
+            "perturbation_span_m": 0.10242131279103178,
+            "mean_grasp_error_m": 0.06803270683792949,
+            "per_axis": {
+              "x": {
+                "slope": 0.07011642281262383,
+                "intercept": 0.049214638206644346,
+                "r2": 0.006263285861754619,
+                "pearson": 0.07914092406432023,
+                "n": 62
+              },
+              "y": {
+                "slope": 0.06753953551017372,
+                "intercept": 0.03341482761324896,
+                "r2": 0.005908816854507393,
+                "pearson": 0.0768688288873151,
+                "n": 62
+              }
+            }
+          },
+          "ctrl_g0p50_noisy": {
+            "gain": 0.5,
+            "noise": "noisy",
+            "label": "control_ctrl_g0p50_noisy",
+            "slope": 0.23417216184932105,
+            "intercept": 0.05498465565304866,
+            "r2": 0.0606735929095229,
+            "pearson": 0.24632010252824052,
+            "n": 62,
+            "slope_ci_95": {
+              "lo": 0.057696875435430686,
+              "hi": 0.4387644089310636
+            },
+            "perturbation_span_m": 0.10242131279103178,
+            "mean_grasp_error_m": 0.06998942306272288,
+            "per_axis": {
+              "x": {
+                "slope": 0.05344966753373429,
+                "intercept": 0.051132977374127996,
+                "r2": 0.003228082268968313,
+                "pearson": 0.05681621484196485,
+                "n": 62
+              },
+              "y": {
+                "slope": 0.05351047379644079,
+                "intercept": 0.03546134267713336,
+                "r2": 0.0038884073622770243,
+                "pearson": 0.06235709552470424,
+                "n": 62
+              }
+            }
+          },
+          "ctrl_g0p75_clean": {
+            "gain": 0.75,
+            "noise": "clean",
+            "label": "control_ctrl_g0p75_clean",
+            "slope": 0.10621468165768824,
+            "intercept": 0.043821779021825324,
+            "r2": 0.0505914757961764,
+            "pearson": 0.22492548943189228,
+            "n": 62,
+            "slope_ci_95": {
+              "lo": 0.016868502232302063,
+              "hi": 0.20595834487613984
+            },
+            "perturbation_span_m": 0.10242131279103178,
+            "mean_grasp_error_m": 0.05062756917715427,
+            "per_axis": {
+              "x": {
+                "slope": 0.03505821140631193,
+                "intercept": 0.0324766664166435,
+                "r2": 0.0062632858617548415,
+                "pearson": 0.07914092406432023,
+                "n": 62
+              },
+              "y": {
+                "slope": 0.024423081512679152,
+                "intercept": 0.03447449102932566,
+                "r2": 0.0029425924163568595,
+                "pearson": 0.05424566725884111,
+                "n": 62
+              }
+            }
+          },
+          "ctrl_g0p75_noisy": {
+            "gain": 0.75,
+            "noise": "noisy",
+            "label": "control_ctrl_g0p75_noisy",
+            "slope": 0.08363447535577417,
+            "intercept": 0.046211430451701486,
+            "r2": 0.028936388340812802,
+            "pearson": 0.17010699086402348,
+            "n": 62,
+            "slope_ci_95": {
+              "lo": -0.01357268267973437,
+              "hi": 0.18325201021461526
+            },
+            "perturbation_span_m": 0.10242131279103178,
+            "mean_grasp_error_m": 0.051570375939641255,
+            "per_axis": {
+              "x": {
+                "slope": 0.025538666548624172,
+                "intercept": 0.0334939244514523,
+                "r2": 0.0031509570977961143,
+                "pearson": 0.056133386658885925,
+                "n": 62
+              },
+              "y": {
+                "slope": 0.005716446404954321,
+                "intercept": 0.03568592548908729,
+                "r2": 0.0001387397324515982,
+                "pearson": 0.011778783148148345,
+                "n": 62
+              }
+            }
+          },
+          "ctrl_g1p00_clean": {
+            "gain": 1.0,
+            "noise": "clean",
+            "label": "control_ctrl_g1p00_clean",
+            "slope": -2.278002129481182e-16,
+            "intercept": 0.038531693928817695,
+            "r2": -5.640449438202247,
+            "pearson": -0.02960291436423951,
+            "n": 62,
+            "slope_ci_95": {
+              "lo": -5.696995234153061e-16,
+              "hi": 4.0761769230321616e-16
+            },
+            "perturbation_span_m": 0.10242131279103178,
+            "mean_grasp_error_m": 0.03853169392881771,
+            "per_axis": {
+              "x": {
+                "slope": -7.155292335643017e-17,
+                "intercept": 0.015738694626642652,
+                "r2": -0.18881118881118875,
+                "pearson": -0.38767724223025013,
+                "n": 62
+              },
+              "y": {
+                "slope": 7.214662948016989e-17,
+                "intercept": 0.03517079652884442,
+                "r2": -12.403225806451612,
+                "pearson": -1.289931965085259e-16,
+                "n": 62
+              }
+            }
+          },
+          "ctrl_g1p00_noisy": {
+            "gain": 1.0,
+            "noise": "noisy",
+            "label": "control_ctrl_g1p00_noisy",
+            "slope": -0.00792181728574723,
+            "intercept": 0.03960534981777887,
+            "r2": 0.0019431641683655965,
+            "pearson": -0.04408133582782442,
+            "n": 62,
+            "slope_ci_95": {
+              "lo": -0.053180148296090746,
+              "hi": 0.04100389736137853
+            },
+            "perturbation_span_m": 0.10242131279103178,
+            "mean_grasp_error_m": 0.0390977530782866,
+            "per_axis": {
+              "x": {
+                "slope": -0.004900386516711406,
+                "intercept": 0.017199486773947063,
+                "r2": 0.0006740666735138845,
+                "pearson": -0.025962794023632167,
+                "n": 62
+              },
+              "y": {
+                "slope": 0.026151839325850693,
+                "intercept": 0.03373692140311481,
+                "r2": 0.02242658806675102,
+                "pearson": 0.1497550936253951,
+                "n": 62
+              }
+            }
+          }
+        },
+        "replayer_slope": 0.5504147765043754,
+        "oracle_slope": -2.278002129481182e-16,
+        "note": "Controls use all valid rollouts (oracle success rate ~0)."
+      },
+      "models": {
+        "openvla": {
+          "csv": "spike3_rollouts.csv",
+          "n_valid": 62,
+          "n_success": 16,
+          "n_skipped": 13,
+          "skipped_sample": [
+            [
+              "0",
+              "status=error RuntimeError('Object override did not take cleanly: commanded=(-0.130,0.130), actual=(-0.106,0.109), err=0.0322m')"
+            ],
+            [
+              "1",
+              "status=error RuntimeError('Object override did not take cleanly: commanded=(-0.130,0.130), actual=(-0.113,0.116), err=0.0217m')"
+            ],
+            [
+              "2",
+              "status=error RuntimeError('Object override did not take cleanly: commanded=(-0.130,0.130), actual=(-0.118,0.118), err=0.0167m')"
+            ],
+            [
+              "9",
+              "status=error RuntimeError('Object override did not take cleanly: commanded=(-0.130,0.235), actual=(-0.111,0.235), err=0.0190m')"
+            ],
+            [
+              "46",
+              "status=error RuntimeError('Object override did not take cleanly: commanded=(-0.025,0.130), actual=(-0.077,0.120), err=0.0533m')"
+            ]
+          ],
+          "regression_all_valid": {
+            "label": "all_valid",
+            "slope": 0.46971703686337324,
+            "intercept": 0.0680944053416591,
+            "r2": 0.05146219433828114,
+            "pearson": 0.226852803240958,
+            "n": 62,
+            "slope_ci_95": {
+              "lo": -0.046822431402799285,
+              "hi": 0.9746252685965588
+            },
+            "perturbation_span_m": 0.10242131279103178,
+            "mean_grasp_error_m": 0.0981918978481823,
+            "per_axis": {
+              "x": {
+                "slope": 0.2910417096226252,
+                "intercept": 0.057371056785741434,
+                "r2": 0.019907179746526116,
+                "pearson": 0.1410928054385693,
+                "n": 62
+              },
+              "y": {
+                "slope": 0.3663529843632266,
+                "intercept": 0.04194219212468585,
+                "r2": 0.08979253532172948,
+                "pearson": 0.29965402603958063,
+                "n": 62
+              }
+            }
+          },
+          "regression_successes": {
+            "label": "successes_only",
+            "slope": 0.12286427943531947,
+            "intercept": 0.0460379208559361,
+            "r2": 0.012960021549785372,
+            "pearson": 0.11384209041380745,
+            "n": 16,
+            "slope_ci_95": {
+              "lo": -0.351258246267814,
+              "hi": 0.9459581748857449
+            },
+            "perturbation_span_m": 0.09624018206354565,
+            "mean_grasp_error_m": 0.05224543094867026,
+            "per_axis": {
+              "x": {
+                "slope": 0.6054426985271061,
+                "intercept": -0.00024330934933136316,
+                "r2": 0.22660334455372444,
+                "pearson": 0.476028722404147,
+                "n": 16
+              },
+              "y": {
+                "slope": -0.2589629239567504,
+                "intercept": 0.04810873453057725,
+                "r2": 0.1217080576037548,
+                "pearson": -0.34886681929320096,
+                "n": 16
+              }
+            },
+            "grounding_calibrated_0_1": 0.7767787409058722
+          },
+          "catch_radius": {
+            "bins": [
+              {
+                "lo_m": 0.0,
+                "hi_m": 0.03,
+                "label": "0-3cm",
+                "n": 3,
+                "n_success": 2,
+                "success_rate": 0.6666666666666666,
+                "n_success_grasp_error": 2,
+                "frac_grasp_error_gt_catch": 1.0,
+                "mean_grasp_error_success_m": 0.047895183550130685
+              },
+              {
+                "lo_m": 0.03,
+                "hi_m": 0.06,
+                "label": "3-6cm",
+                "n": 19,
+                "n_success": 8,
+                "success_rate": 0.42105263157894735,
+                "n_success_grasp_error": 8,
+                "frac_grasp_error_gt_catch": 1.0,
+                "mean_grasp_error_success_m": 0.04899021068390558
+              },
+              {
+                "lo_m": 0.06,
+                "hi_m": 0.1,
+                "label": "6-10cm",
+                "n": 35,
+                "n_success": 6,
+                "success_rate": 0.17142857142857143,
+                "n_success_grasp_error": 6,
+                "frac_grasp_error_gt_catch": 0.8333333333333334,
+                "mean_grasp_error_success_m": 0.058035807101203034
+              },
+              {
+                "lo_m": 0.1,
+                "hi_m": 0.15,
+                "label": "10-15cm",
+                "n": 5,
+                "n_success": 0,
+                "success_rate": 0.0,
+                "n_success_grasp_error": 0,
+                "frac_grasp_error_gt_catch": NaN,
+                "mean_grasp_error_success_m": NaN
+              }
+            ],
+            "catch_radius_m": 0.03
+          },
+          "plot": "grasp_error_vs_displacement_openvla_task0.png"
+        },
+        "pi05": {
+          "csv": "pi05_rollouts.csv",
+          "n_valid": 62,
+          "n_success": 41,
+          "n_skipped": 13,
+          "skipped_sample": [
+            [
+              "0",
+              "status=error RuntimeError('Object override did not take cleanly: commanded=(-0.130,0.130), actual=(-0.106,0.109), err=0.0322m')"
+            ],
+            [
+              "1",
+              "status=error RuntimeError('Object override did not take cleanly: commanded=(-0.130,0.130), actual=(-0.113,0.116), err=0.0217m')"
+            ],
+            [
+              "2",
+              "status=error RuntimeError('Object override did not take cleanly: commanded=(-0.130,0.130), actual=(-0.118,0.118), err=0.0167m')"
+            ],
+            [
+              "9",
+              "status=error RuntimeError('Object override did not take cleanly: commanded=(-0.130,0.235), actual=(-0.111,0.235), err=0.0190m')"
+            ],
+            [
+              "46",
+              "status=error RuntimeError('Object override did not take cleanly: commanded=(-0.025,0.130), actual=(-0.077,0.120), err=0.0533m')"
+            ]
+          ],
+          "regression_all_valid": {
+            "label": "all_valid",
+            "slope": 0.23595742498279634,
+            "intercept": 0.041149406636154476,
+            "r2": 0.025187807084170233,
+            "pearson": 0.15870666994228766,
+            "n": 62,
+            "slope_ci_95": {
+              "lo": 0.010895263900329378,
+              "hi": 0.5166722690046521
+            },
+            "perturbation_span_m": 0.10242131279103178,
+            "mean_grasp_error_m": 0.05626856620016752,
+            "per_axis": {
+              "x": {
+                "slope": 0.2634025503456553,
+                "intercept": 0.012930375923066782,
+                "r2": 0.0356728895641375,
+                "pearson": 0.1888726808305998,
+                "n": 62
+              },
+              "y": {
+                "slope": 0.17943755649062978,
+                "intercept": 0.03746328956392927,
+                "r2": 0.045916595873035315,
+                "pearson": 0.2142815808067394,
+                "n": 62
+              }
+            }
+          },
+          "regression_successes": {
+            "label": "successes_only",
+            "slope": 0.03777887530941689,
+            "intercept": 0.045253366473711136,
+            "r2": 0.0013182763479071546,
+            "pearson": 0.036308075519189686,
+            "n": 41,
+            "slope_ci_95": {
+              "lo": -0.1950929457501831,
+              "hi": 0.35945132402405083
+            },
+            "perturbation_span_m": 0.10242131279103178,
+            "mean_grasp_error_m": 0.047516089834361154,
+            "per_axis": {
+              "x": {
+                "slope": 0.0693452405256867,
+                "intercept": 0.009616142075880562,
+                "r2": 0.008193816302362267,
+                "pearson": 0.09051970118356827,
+                "n": 41
+              },
+              "y": {
+                "slope": 0.07097594476632377,
+                "intercept": 0.04114465185193356,
+                "r2": 0.007520660920696365,
+                "pearson": 0.08672174422079183,
+                "n": 41
+              }
+            },
+            "grounding_calibrated_0_1": 0.9313628977235192
+          },
+          "catch_radius": {
+            "bins": [
+              {
+                "lo_m": 0.0,
+                "hi_m": 0.03,
+                "label": "0-3cm",
+                "n": 3,
+                "n_success": 3,
+                "success_rate": 1.0,
+                "n_success_grasp_error": 3,
+                "frac_grasp_error_gt_catch": 1.0,
+                "mean_grasp_error_success_m": 0.04673722113018581
+              },
+              {
+                "lo_m": 0.03,
+                "hi_m": 0.06,
+                "label": "3-6cm",
+                "n": 19,
+                "n_success": 15,
+                "success_rate": 0.7894736842105263,
+                "n_success_grasp_error": 15,
+                "frac_grasp_error_gt_catch": 0.8666666666666667,
+                "mean_grasp_error_success_m": 0.044020873688432736
+              },
+              {
+                "lo_m": 0.06,
+                "hi_m": 0.1,
+                "label": "6-10cm",
+                "n": 35,
+                "n_success": 19,
+                "success_rate": 0.5428571428571428,
+                "n_success_grasp_error": 19,
+                "frac_grasp_error_gt_catch": 0.631578947368421,
+                "mean_grasp_error_success_m": 0.05247809652162049
+              },
+              {
+                "lo_m": 0.1,
+                "hi_m": 0.15,
+                "label": "10-15cm",
+                "n": 5,
+                "n_success": 4,
+                "success_rate": 0.8,
+                "n_success_grasp_error": 4,
+                "frac_grasp_error_gt_catch": 0.5,
+                "mean_grasp_error_success_m": 0.037637770145242305
+              }
+            ],
+            "catch_radius_m": 0.03
+          },
+          "plot": "grasp_error_vs_displacement_pi05_task0.png"
+        }
+      },
+      "separation": {
+        "grasp_error_slope_delta": 0.08508540412590257,
+        "grasp_error_calibrated_grounding_delta": 0.15458415681764703,
+        "velocity_l2_raw_delta": 0.05575561317172517,
+        "velocity_l2_success_raw_delta": 0.043474777604557216,
+        "vla_trace_visual_dep_delta": 0.30307761486441276,
+        "vla_trace_attn_mass_delta": 0.044600000000000084
+      }
+    },
+    {
+      "task_id": 2,
+      "center_x": -0.075,
+      "center_y": 0.0,
+      "controls": {
+        "per_control": {
+          "ctrl_g0p00_clean": {
+            "gain": 0.0,
+            "noise": "clean",
+            "label": "control_ctrl_g0p00_clean",
+            "slope": 0.4119340029929821,
+            "intercept": 0.08190077801137317,
+            "r2": 0.05449920460325386,
+            "pearson": 0.2334506470396989,
+            "n": 72,
+            "slope_ci_95": {
+              "lo": 0.07164617307936097,
+              "hi": 0.7582733782590365
+            },
+            "perturbation_span_m": 0.0995559933641271,
+            "mean_grasp_error_m": 0.10842233710073962,
+            "per_axis": {
+              "x": {
+                "slope": 0.06366772560948854,
+                "intercept": 0.08365105628318048,
+                "r2": 0.0011615203866894852,
+                "pearson": 0.034081085468179804,
+                "n": 72
+              },
+              "y": {
+                "slope": 0.5750164929765491,
+                "intercept": 0.02646784488844635,
+                "r2": 0.17056221741257338,
+                "pearson": 0.41299178855344465,
+                "n": 72
+              }
+            }
+          },
+          "ctrl_g0p00_noisy": {
+            "gain": 0.0,
+            "noise": "noisy",
+            "label": "control_ctrl_g0p00_noisy",
+            "slope": 0.37819089988660415,
+            "intercept": 0.08484696952998765,
+            "r2": 0.0446606130081153,
+            "pearson": 0.2113305775511801,
+            "n": 72,
+            "slope_ci_95": {
+              "lo": 0.03883949744211954,
+              "hi": 0.735941093974644
+            },
+            "perturbation_span_m": 0.0995559933641271,
+            "mean_grasp_error_m": 0.10919604541478199,
+            "per_axis": {
+              "x": {
+                "slope": 0.05058337597444834,
+                "intercept": 0.08471557022185783,
+                "r2": 0.0007104018564275671,
+                "pearson": 0.026653364823741126,
+                "n": 72
+              },
+              "y": {
+                "slope": 0.5662658835191439,
+                "intercept": 0.027762253913985596,
+                "r2": 0.17062268028050587,
+                "pearson": 0.41306498312070206,
+                "n": 72
+              }
+            }
+          },
+          "ctrl_g0p25_clean": {
+            "gain": 0.25,
+            "noise": "clean",
+            "label": "control_ctrl_g0p25_clean",
+            "slope": 0.27466816854505877,
+            "intercept": 0.0693484885879537,
+            "r2": 0.04063296987797449,
+            "pearson": 0.2015762135718755,
+            "n": 72,
+            "slope_ci_95": {
+              "lo": -0.003925235181599369,
+              "hi": 0.5490849479417157
+            },
+            "perturbation_span_m": 0.0995559933641271,
+            "mean_grasp_error_m": 0.0870324574011811,
+            "per_axis": {
+              "x": {
+                "slope": 0.04775079420711621,
+                "intercept": 0.06598198727467723,
+                "r2": 0.0011615203866895962,
+                "pearson": 0.03408108546817922,
+                "n": 72
+              },
+              "y": {
+                "slope": 0.28675207723462465,
+                "intercept": 0.031503727209562515,
+                "r2": 0.06320662525853504,
+                "pearson": 0.2514092783859314,
+                "n": 72
+              }
+            }
+          },
+          "ctrl_g0p25_noisy": {
+            "gain": 0.25,
+            "noise": "noisy",
+            "label": "control_ctrl_g0p25_noisy",
+            "slope": 0.2737852374862736,
+            "intercept": 0.07010433235673649,
+            "r2": 0.03995383557976362,
+            "pearson": 0.19988455563090368,
+            "n": 72,
+            "slope_ci_95": {
+              "lo": 0.01443810432580308,
+              "hi": 0.5400916759847273
+            },
+            "perturbation_span_m": 0.0995559933641271,
+            "mean_grasp_error_m": 0.08773145539351121,
+            "per_axis": {
+              "x": {
+                "slope": 0.05590359260588616,
+                "intercept": 0.06624850701764823,
+                "r2": 0.0015813014436635298,
+                "pearson": 0.03976558114328928,
+                "n": 72
+              },
+              "y": {
+                "slope": 0.2902102816322948,
+                "intercept": 0.031785010310870894,
+                "r2": 0.0642739584518982,
+                "pearson": 0.2535230925416819,
+                "n": 72
+              }
+            }
+          },
+          "ctrl_g0p50_clean": {
+            "gain": 0.5,
+            "noise": "clean",
+            "label": "control_ctrl_g0p50_clean",
+            "slope": 0.14725660268710722,
+            "intercept": 0.05745403366898719,
+            "r2": 0.024140097640508618,
+            "pearson": 0.1553708390931469,
+            "n": 72,
+            "slope_ci_95": {
+              "lo": -0.06012562264687617,
+              "hi": 0.3447629899429354
+            },
+            "perturbation_span_m": 0.0995559933641271,
+            "mean_grasp_error_m": 0.06693485987194575,
+            "per_axis": {
+              "x": {
+                "slope": 0.031833862804744754,
+                "intercept": 0.04831291826617393,
+                "r2": 0.0011615203866892632,
+                "pearson": 0.034081085468179874,
+                "n": 72
+              },
+              "y": {
+                "slope": 0.018178013385853786,
+                "intercept": 0.036185037382676595,
+                "r2": 0.00036059584748182605,
+                "pearson": 0.01898936142901312,
+                "n": 72
+              }
+            }
+          },
+          "ctrl_g0p50_noisy": {
+            "gain": 0.5,
+            "noise": "noisy",
+            "label": "control_ctrl_g0p50_noisy",
+            "slope": 0.15885635990178182,
+            "intercept": 0.05649336233125933,
+            "r2": 0.026984907620028142,
+            "pearson": 0.16427083618228824,
+            "n": 72,
+            "slope_ci_95": {
+              "lo": -0.044387194284077634,
+              "hi": 0.3605687243499922
+            },
+            "perturbation_span_m": 0.0995559933641271,
+            "mean_grasp_error_m": 0.06672101604579997,
+            "per_axis": {
+              "x": {
+                "slope": 0.06286748289612723,
+                "intercept": 0.04705908113076191,
+                "r2": 0.004707730178667435,
+                "pearson": 0.06861290096379406,
+                "n": 72
+              },
+              "y": {
+                "slope": 0.048484567727655005,
+                "intercept": 0.03516891076174569,
+                "r2": 0.0025860617699073885,
+                "pearson": 0.05085333587786829,
+                "n": 72
+              }
+            }
+          },
+          "ctrl_g0p75_clean": {
+            "gain": 0.75,
+            "noise": "clean",
+            "label": "control_ctrl_g0p75_clean",
+            "slope": 0.05146941808501008,
+            "intercept": 0.046417591985463934,
+            "r2": 0.01118629068989585,
+            "pearson": 0.10576526220785187,
+            "n": 72,
+            "slope_ci_95": {
+              "lo": -0.05288681160941603,
+              "hi": 0.1537310289798209
+            },
+            "perturbation_span_m": 0.0995559933641271,
+            "mean_grasp_error_m": 0.049731349051204764,
+            "per_axis": {
+              "x": {
+                "slope": 0.015916931402371944,
+                "intercept": 0.030643849257670667,
+                "r2": 0.0011615203866894852,
+                "pearson": 0.03408108546818033,
+                "n": 72
+              },
+              "y": {
+                "slope": 0.009089006692926777,
+                "intercept": 0.03619237399053293,
+                "r2": 0.000360595847481604,
+                "pearson": 0.018989361429013054,
+                "n": 72
+              }
+            }
+          },
+          "ctrl_g0p75_noisy": {
+            "gain": 0.75,
+            "noise": "noisy",
+            "label": "control_ctrl_g0p75_noisy",
+            "slope": 0.012382434559556808,
+            "intercept": 0.04800517726853134,
+            "r2": 0.000592484166260121,
+            "pearson": 0.02434099764307656,
+            "n": 72,
+            "slope_ci_95": {
+              "lo": -0.10176145149523123,
+              "hi": 0.12407425573398906
+            },
+            "perturbation_span_m": 0.0995559933641271,
+            "mean_grasp_error_m": 0.04880239591874093,
+            "per_axis": {
+              "x": {
+                "slope": -0.01150283775346193,
+                "intercept": 0.031417790063108054,
+                "r2": 0.00046678024368140836,
+                "pearson": -0.021605097631843557,
+                "n": 72
+              },
+              "y": {
+                "slope": -0.026914404194514588,
+                "intercept": 0.036296597345296375,
+                "r2": 0.003132850001041798,
+                "pearson": -0.0559718679431196,
+                "n": 72
+              }
+            }
+          },
+          "ctrl_g1p00_clean": {
+            "gain": 1.0,
+            "noise": "clean",
+            "label": "control_ctrl_g1p00_clean",
+            "slope": -3.485709629993668e-16,
+            "intercept": 0.038454700231848424,
+            "r2": -8.046875,
+            "pearson": 0.5919099623163971,
+            "n": 72,
+            "slope_ci_95": {
+              "lo": -3.3511240774756575e-16,
+              "hi": 6.448279158617432e-16
+            },
+            "perturbation_span_m": 0.0995559933641271,
+            "mean_grasp_error_m": 0.03845470023184842,
+            "per_axis": {
+              "x": {
+                "slope": 1.4636855695295683e-16,
+                "intercept": 0.012974780249167388,
+                "r2": 0.1383928571428571,
+                "pearson": 0.6518484643678606,
+                "n": 72
+              },
+              "y": {
+                "slope": 6.95012871458157e-16,
+                "intercept": 0.03619971059838926,
+                "r2": -5.983050847457627,
+                "pearson": 0.6163215489593342,
+                "n": 72
+              }
+            }
+          },
+          "ctrl_g1p00_noisy": {
+            "gain": 1.0,
+            "noise": "noisy",
+            "label": "control_ctrl_g1p00_noisy",
+            "slope": 0.003977804768297621,
+            "intercept": 0.03830511473238697,
+            "r2": 0.0004540167973328124,
+            "pearson": 0.02130766991796582,
+            "n": 72,
+            "slope_ci_95": {
+              "lo": -0.03471629856542262,
+              "hi": 0.044727216996209886
+            },
+            "perturbation_span_m": 0.0995559933641271,
+            "mean_grasp_error_m": 0.0385612178543479,
+            "per_axis": {
+              "x": {
+                "slope": -0.0158810536550958,
+                "intercept": 0.014006850410725554,
+                "r2": 0.007189752809166006,
+                "pearson": -0.08479241009174063,
+                "n": 72
+              },
+              "y": {
+                "slope": 0.00836844971307555,
+                "intercept": 0.03550343825164093,
+                "r2": 0.002336837313139384,
+                "pearson": 0.04834084518437015,
+                "n": 72
+              }
+            }
+          }
+        },
+        "replayer_slope": 0.4119340029929821,
+        "oracle_slope": -3.485709629993668e-16,
+        "note": "Controls use all valid rollouts (oracle success rate ~0)."
+      },
+      "models": {
+        "openvla": {
+          "csv": "openvla_task2_rollouts.csv",
+          "n_valid": 72,
+          "n_success": 20,
+          "n_skipped": 3,
+          "skipped_sample": [
+            [
+              "68",
+              "status=error RuntimeError('Object override did not take cleanly: commanded=(-0.005,0.000), actual=(-0.049,-0.029), err=0.0520m')"
+            ],
+            [
+              "71",
+              "status=error RuntimeError('Object override did not take cleanly: commanded=(-0.005,0.035), actual=(-0.485,0.110), err=0.4854m')"
+            ],
+            [
+              "74",
+              "status=error RuntimeError('Object override did not take cleanly: commanded=(-0.005,0.070), actual=(-1.356,0.579), err=1.4435m')"
+            ]
+          ],
+          "regression_all_valid": {
+            "label": "all_valid",
+            "slope": 0.8706690105181731,
+            "intercept": 0.12478499165771682,
+            "r2": 0.029637852555684185,
+            "pearson": 0.17215647694955946,
+            "n": 72,
+            "slope_ci_95": {
+              "lo": -0.2814227680997912,
+              "hi": 1.9230023060317818
+            },
+            "perturbation_span_m": 0.0995559933641271,
+            "mean_grasp_error_m": 0.18084130029444598,
+            "per_axis": {
+              "x": {
+                "slope": 0.6968928714071743,
+                "intercept": 0.07958133233244188,
+                "r2": 0.044184396250878666,
+                "pearson": 0.2102008474076133,
+                "n": 72
+              },
+              "y": {
+                "slope": 0.6908884867784924,
+                "intercept": 0.11058089031532822,
+                "r2": 0.03408356913942612,
+                "pearson": 0.1846173587164171,
+                "n": 72
+              }
+            }
+          },
+          "regression_successes": {
+            "label": "successes_only",
+            "slope": 0.08420904383697549,
+            "intercept": 0.04429815364596752,
+            "r2": 0.019225951033825295,
+            "pearson": 0.13865767571189452,
+            "n": 20,
+            "slope_ci_95": {
+              "lo": -0.18023845313115983,
+              "hi": 0.4884380715626213
+            },
+            "perturbation_span_m": 0.0995559933641271,
+            "mean_grasp_error_m": 0.04837625846934247,
+            "per_axis": {
+              "x": {
+                "slope": 0.09606877012868163,
+                "intercept": 0.011901136026191703,
+                "r2": 0.05221900079055608,
+                "pearson": 0.22851477149312713,
+                "n": 20
+              },
+              "y": {
+                "slope": 0.21397774508179115,
+                "intercept": 0.03958167538226992,
+                "r2": 0.10205671452627973,
+                "pearson": 0.31946316614952613,
+                "n": 20
+              }
+            },
+            "grounding_calibrated_0_1": 0.795576370911021
+          },
+          "catch_radius": {
+            "bins": [
+              {
+                "lo_m": 0.0,
+                "hi_m": 0.03,
+                "label": "0-3cm",
+                "n": 3,
+                "n_success": 2,
+                "success_rate": 0.6666666666666666,
+                "n_success_grasp_error": 2,
+                "frac_grasp_error_gt_catch": 1.0,
+                "mean_grasp_error_success_m": 0.04585006686174349
+              },
+              {
+                "lo_m": 0.03,
+                "hi_m": 0.06,
+                "label": "3-6cm",
+                "n": 24,
+                "n_success": 11,
+                "success_rate": 0.4583333333333333,
+                "n_success_grasp_error": 11,
+                "frac_grasp_error_gt_catch": 1.0,
+                "mean_grasp_error_success_m": 0.04645641867812956
+              },
+              {
+                "lo_m": 0.06,
+                "hi_m": 0.1,
+                "label": "6-10cm",
+                "n": 45,
+                "n_success": 7,
+                "success_rate": 0.15555555555555556,
+                "n_success_grasp_error": 7,
+                "frac_grasp_error_gt_catch": 0.8571428571428571,
+                "mean_grasp_error_success_m": 0.05211491860056248
+              }
+            ],
+            "catch_radius_m": 0.03
+          },
+          "plot": "grasp_error_vs_displacement_openvla_task2.png"
+        },
+        "pi05": {
+          "csv": "pi05_task2_rollouts.csv",
+          "n_valid": 72,
+          "n_success": 72,
+          "n_skipped": 3,
+          "skipped_sample": [
+            [
+              "68",
+              "status=error RuntimeError('Object override did not take cleanly: commanded=(-0.005,0.000), actual=(-0.049,-0.029), err=0.0520m')"
+            ],
+            [
+              "71",
+              "status=error RuntimeError('Object override did not take cleanly: commanded=(-0.005,0.035), actual=(-0.485,0.110), err=0.4854m')"
+            ],
+            [
+              "74",
+              "status=error RuntimeError('Object override did not take cleanly: commanded=(-0.005,0.070), actual=(-1.356,0.579), err=1.4435m')"
+            ]
+          ],
+          "regression_all_valid": {
+            "label": "all_valid",
+            "slope": -0.08556254704548742,
+            "intercept": 0.0452342654253598,
+            "r2": 0.013376613763885992,
+            "pearson": -0.11565731176145289,
+            "n": 72,
+            "slope_ci_95": {
+              "lo": -0.326407267642352,
+              "hi": 0.05899890999461017
+            },
+            "perturbation_span_m": 0.0995559933641271,
+            "mean_grasp_error_m": 0.03972548943013748,
+            "per_axis": {
+              "x": {
+                "slope": 0.04306533033290069,
+                "intercept": 0.008930189254491206,
+                "r2": 0.01612521907008091,
+                "pearson": 0.12698511357667386,
+                "n": 72
+              },
+              "y": {
+                "slope": -0.14364307797535458,
+                "intercept": 0.04361534642026882,
+                "r2": 0.046003383234732076,
+                "pearson": -0.21448399295689172,
+                "n": 72
+              }
+            }
+          },
+          "regression_successes": {
+            "label": "successes_only",
+            "slope": -0.08556254704548742,
+            "intercept": 0.0452342654253598,
+            "r2": 0.013376613763885992,
+            "pearson": -0.11565731176145289,
+            "n": 72,
+            "slope_ci_95": {
+              "lo": -0.326407267642352,
+              "hi": 0.05899890999461017
+            },
+            "perturbation_span_m": 0.0995559933641271,
+            "mean_grasp_error_m": 0.03972548943013748,
+            "per_axis": {
+              "x": {
+                "slope": 0.04306533033290069,
+                "intercept": 0.008930189254491206,
+                "r2": 0.01612521907008091,
+                "pearson": 0.12698511357667386,
+                "n": 72
+              },
+              "y": {
+                "slope": -0.14364307797535458,
+                "intercept": 0.04361534642026882,
+                "r2": 0.046003383234732076,
+                "pearson": -0.21448399295689172,
+                "n": 72
+              }
+            },
+            "grounding_calibrated_0_1": 1.0
+          },
+          "catch_radius": {
+            "bins": [
+              {
+                "lo_m": 0.0,
+                "hi_m": 0.03,
+                "label": "0-3cm",
+                "n": 3,
+                "n_success": 3,
+                "success_rate": 1.0,
+                "n_success_grasp_error": 3,
+                "frac_grasp_error_gt_catch": 1.0,
+                "mean_grasp_error_success_m": 0.03862014137529294
+              },
+              {
+                "lo_m": 0.03,
+                "hi_m": 0.06,
+                "label": "3-6cm",
+                "n": 24,
+                "n_success": 24,
+                "success_rate": 1.0,
+                "n_success_grasp_error": 24,
+                "frac_grasp_error_gt_catch": 0.875,
+                "mean_grasp_error_success_m": 0.04398198535852532
+              },
+              {
+                "lo_m": 0.06,
+                "hi_m": 0.1,
+                "label": "6-10cm",
+                "n": 45,
+                "n_success": 45,
+                "success_rate": 1.0,
+                "n_success_grasp_error": 45,
+                "frac_grasp_error_gt_catch": 0.7555555555555555,
+                "mean_grasp_error_success_m": 0.03752904813865359
+              }
+            ],
+            "catch_radius_m": 0.03
+          },
+          "plot": "grasp_error_vs_displacement_pi05_task2.png"
+        }
+      },
+      "separation": {
+        "grasp_error_slope_delta": 0.1697715908824629,
+        "grasp_error_calibrated_grounding_delta": 0.20442362908897904,
+        "velocity_l2_raw_delta": 0.12186298944589458,
+        "velocity_l2_success_raw_delta": 0.10803344689785804,
+        "vla_trace_visual_dep_delta": 0.30307761486441276,
+        "vla_trace_attn_mass_delta": 0.044600000000000084
+      }
+    }
+  ],
+  "pooled": {
+    "models": {
+      "openvla": {
+        "label": "pooled_successes",
+        "slope": 0.10591816108743073,
+        "intercept": 0.044867829363538066,
+        "r2": 0.014696417748615964,
+        "pearson": 0.12122878267398407,
+        "n": 36,
+        "slope_ci_95": {
+          "lo": -0.18193776649242127,
+          "hi": 0.5216451382422707
+        },
+        "perturbation_span_m": 0.09955899935993161,
+        "mean_grasp_error_m": 0.05009589068237705,
+        "per_axis": {
+          "x": {
+            "slope": 0.3322535775945214,
+            "intercept": 0.006196824777548876,
+            "r2": 0.12922557250776723,
+            "pearson": 0.35947958566206173,
+            "n": 36
+          },
+          "y": {
+            "slope": 0.002742395085165692,
+            "intercept": 0.04271064448471757,
+            "r2": 1.5324907661984355e-05,
+            "pearson": 0.003914704032467728,
+            "n": 36
+          }
+        },
+        "grounding_calibrated_0_1": 0.8075666468111455
+      },
+      "pi05": {
+        "label": "pooled_successes",
+        "slope": -0.04906082591638019,
+        "intercept": 0.04563094143691769,
+        "r2": 0.0030955590465845395,
+        "pearson": -0.055637748396074035,
+        "n": 113,
+        "slope_ci_95": {
+          "lo": -0.2113872498450198,
+          "hi": 0.07553743183533121
+        },
+        "perturbation_span_m": 0.10242131279103178,
+        "mean_grasp_error_m": 0.04255216745290889,
+        "per_axis": {
+          "x": {
+            "slope": 0.049387210122797655,
+            "intercept": 0.009257619737189936,
+            "r2": 0.008315377426794335,
+            "pearson": 0.09118869133173385,
+            "n": 113
+          },
+          "y": {
+            "slope": -0.06369275397959609,
+            "intercept": 0.042586663586162844,
+            "r2": 0.0074139760106191055,
+            "pearson": -0.0861044482626731,
+            "n": 113
+          }
+        },
+        "grounding_calibrated_0_1": 1.0
+      }
+    },
+    "separation": {
+      "grasp_error_slope_delta": 0.1549789870038109,
+      "velocity_l2_success_raw_delta_mean": 0.07575411225120762,
+      "vla_trace_visual_dep_delta": 0.303,
+      "vla_trace_attn_mass_delta": 0.045
+    }
+  }
+}

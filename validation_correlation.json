@@ -1,0 +1,53 @@
+{
+  "per_condition": {
+    "n": 56,
+    "pearson_r": 0.743403758018989,
+    "r_squared": 0.5526491474367555,
+    "spearman_rho": 0.8784688995215311,
+    "partial_r_controlling_baseline": 0.8853169101701149
+  },
+  "per_model_rank": {
+    "n_models": 2,
+    "models": [
+      "openvla",
+      "pi05"
+    ],
+    "spearman_rho": null
+  },
+  "n_white_box_conditions": 224,
+  "n_aligned_conditions": 56,
+  "position_separation": {
+    "action_sensitivity_calibrated_delta": 0.16809756719477098,
+    "action_sensitivity_raw_delta": 0.05575561317172517,
+    "vla_trace_visual_dependency_delta": 0.30307761486441276,
+    "vla_trace_attention_mass_delta": 0.044600000000000084,
+    "action_sensitivity_separates_more_than_visual_dep": false,
+    "action_sensitivity_separates_more_than_attn_mass": true
+  },
+  "derived_per_model_whitebox": [
+    {
+      "model": "openvla",
+      "visual_dependency": 0.6865057184689206,
+      "attention_mass_object": 0.5882,
+      "patchmask_target_bg_avg_drop": 47.75
+    },
+    {
+      "model": "openvla_oft",
+      "visual_dependency": null,
+      "attention_mass_object": null,
+      "patchmask_target_bg_avg_drop": 60.25
+    },
+    {
+      "model": "pi05",
+      "visual_dependency": 0.9895833333333334,
+      "attention_mass_object": 0.6328,
+      "patchmask_target_bg_avg_drop": 76.45
+    },
+    {
+      "model": "x_vla",
+      "visual_dependency": null,
+      "attention_mass_object": null,
+      "patchmask_target_bg_avg_drop": 49.6
+    }
+  ]
+}

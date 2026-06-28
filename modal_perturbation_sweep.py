@@ -143,16 +143,23 @@ image = (
 )
 
 
-def build_grid(center_x: float, center_y: float) -> list[tuple[int, float, float, int]]:
+def build_grid(
+    center_x: float,
+    center_y: float,
+    *,
+    grid_half_width: float = GRID_HALF_WIDTH,
+    grid_size: int = GRID_SIZE,
+    n_repeats: int = N_REPEATS,
+) -> list[tuple[int, float, float, int]]:
     import numpy as np
 
-    xs = np.linspace(center_x - GRID_HALF_WIDTH, center_x + GRID_HALF_WIDTH, GRID_SIZE)
-    ys = np.linspace(center_y - GRID_HALF_WIDTH, center_y + GRID_HALF_WIDTH, GRID_SIZE)
+    xs = np.linspace(center_x - grid_half_width, center_x + grid_half_width, grid_size)
+    ys = np.linspace(center_y - grid_half_width, center_y + grid_half_width, grid_size)
     configs: list[tuple[int, float, float, int]] = []
     rollout_id = 0
     for x in xs:
         for y in ys:
-            for base_idx in range(N_REPEATS):
+            for base_idx in range(n_repeats):
                 configs.append((rollout_id, float(x), float(y), base_idx))
                 rollout_id += 1
     return configs
@@ -507,12 +514,23 @@ def run_rollout(rollout_id: int, grid_x: float, grid_y: float, base_idx: int, ta
 
 
 @app.local_entrypoint()
-def main(test: bool = False, skip_prep: bool = False, task_id: int = 0) -> None:
+def main(
+    test: bool = False,
+    skip_prep: bool = False,
+    task_id: int = 0,
+    grid_half_width: float = GRID_HALF_WIDTH,
+    n_repeats: int = N_REPEATS,
+    output_csv: str = "",
+    output_traj_dir: str = "",
+) -> None:
     from libero_task_config import get_task_preset
 
     preset = get_task_preset(task_id)
+    csv_path = Path(output_csv) if output_csv else preset.openvla_csv
+    traj_dir = Path(output_traj_dir) if output_traj_dir else preset.openvla_traj_dir
     print(f"Task {task_id}: {preset.instruction}")
     print(f"Grid center=({preset.center_x:.3f}, {preset.center_y:.3f}), target={preset.target_object}")
+    print(f"Grid half-width=±{grid_half_width*100:.0f}cm, repeats={n_repeats}, outputs -> {csv_path.name}")
 
     if not skip_prep:
         print("Ensuring OpenVLA weights are cached on Modal Volume...")
@@ -521,7 +539,15 @@ def main(test: bool = False, skip_prep: bool = False, task_id: int = 0) -> None:
     configs = (
         [(0, preset.center_x, preset.center_y, 0, task_id)]
         if test
-        else [(rid, gx, gy, bi, task_id) for rid, gx, gy, bi in build_grid(preset.center_x, preset.center_y)]
+        else [
+            (rid, gx, gy, bi, task_id)
+            for rid, gx, gy, bi in build_grid(
+                preset.center_x,
+                preset.center_y,
+                grid_half_width=grid_half_width,
+                n_repeats=n_repeats,
+            )
+        ]
     )
     est_rollout_seconds = 90
     est_a10_dollars_per_hour = 0.36
@@ -535,4 +561,4 @@ def main(test: bool = False, skip_prep: bool = False, task_id: int = 0) -> None:
         for row in sorted(errors, key=lambda r: r["rollout_id"]):
             print(f"  rollout {row['rollout_id']}: {row['error']}")
 
-    _write_local_outputs(results, preset.openvla_csv, preset.openvla_traj_dir)
+    _write_local_outputs(results, csv_path, traj_dir)
